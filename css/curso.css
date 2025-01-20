@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Menú lateral */
+.sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #0044cc;
+    font-size: 1rem;
+    display: block;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #002266;
+}
+
+/* Contenido principal */
+.content {
+    width: 80%;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.content p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}

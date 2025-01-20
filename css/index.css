@@ -1,0 +1,51 @@
+header {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0044cc;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #e8f4f8;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .btn {
+    padding: 0.5rem 1rem;
+    background-color: #0044cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #002266;
+}
+
+.courses ul {
+    list-style: none;
+    padding: 0;
+}
+
+.courses ul li {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+}

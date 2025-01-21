@@ -28,7 +28,7 @@
 .navbar a{
     position: relative;
     font-size: 15px;
-    color:white;
+    color:black;
     font-weight: 300;
     text-decoration: none;
     margin-left: 40px;
@@ -41,7 +41,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background: white;
+    background: black;
     transition: 0.3s;
 }
 

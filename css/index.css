@@ -1,5 +1,5 @@
 header {
-    background-color: #f4f4f4;
+    background-color: var(--light-color);
     padding: 1rem;
     border-bottom: 1px solid #ccc;
 }
@@ -22,7 +22,7 @@ nav ul li a {
 .hero {
     text-align: center;
     padding: 2rem;
-    background-color: #e8f4f8;
+    background-color: var(--light-color);
     display: flex;
     flex-direction: column;
 }

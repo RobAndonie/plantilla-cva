@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantilla de Curso</title>
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../css/curso.css" />
+</head>
+
+<body display="flex">
+
+    <header class="header">
+
+        <div class="logo-container">
+            <img class="logo" src="../../images/CVA LOGOTIPO.png" width="200px" height="40">
+            <img class="logo" src="../../images/logo_largo.png" width="150px" height="40">
+        </div>
+        <nav class="navbar">
+            <a href="#">Menu</a>
+            <a href="#">Objetivos</a>
+            <a href="#">Metodología</a>
+            <a href="#">Políticas de Evaluación</a>
+        </nav>
+        <div class="search">
+            <form>
+                <div class="input-container">
+                    <img src="../../images/lupa.png" class="icon" alt="Lupa">
+                    <input type="text" placeholder="Busca un curso">
+                    <button type="submit">Enviar</button>
+
+                </div>
+            </form>
+        </div>
+
+
+
+    </header>
+
+    <div class="container">
+
+        <!-- Menú lateral -->
+        <aside class="sidebar" ,>
+            <h2>Módulos</h2>
+            <ul>
+                <li><a href="#introduccion">Bienvenida al curso</a></li>
+                <li><a href="#modulo2">1.1 Que es el cambio climatico?</a></li>
+                <li><a href="#modulo3">1.2 Que Dicen los cientificos</a></li>
+                <li><a href="#modulo4">1.3 Por que debe importarnos</a></li>
+            </ul>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="content">
+            <section id="modulo1">
+
+                <!-- Carrusel deslizante -->
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <h2>La Luna</h2>
+                            <img src="../../images/la_luna.png" alt="La Luna">
+                        </div>
+                        <div class="carousel-slide">
+                            <h2>El Sol</h2>
+                            <img src="../../images/el_sol.png" alt="El Sol">
+                        </div>
+                        <div class="carousel-slide">
+                            <h2>Las Estrellas</h2>
+                            <img src="../../images/las_estrellas.png" alt="Las Estrellas">
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <span class="carousel-dot" data-slide="0"></span>
+                        <span class="carousel-dot" data-slide="1"></span>
+                        <span class="carousel-dot" data-slide="2"></span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Funcionalidad para el carrusel -->
+    <script>
+        
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(track.children);
+        const dotsNav = document.querySelector('.carousel-nav');
+        const dots = Array.from(dotsNav.children);
+
+        
+        const slideWidth = slides[0].getBoundingClientRect().width;
+
+        
+        slides.forEach((slide, index) => {
+            slide.style.left = `${slideWidth * index}px`;
+        });
+
+        
+        const moveToSlide = (track, currentSlide, targetSlide) => {
+            track.style.transform = `translateX(-${targetSlide.style.left})`;
+            currentSlide.classList.remove('active-slide');
+            targetSlide.classList.add('active-slide');
+        };
+
+        
+        const updateDots = (currentDot, targetDot) => {
+            currentDot.classList.remove('active');
+            targetDot.classList.add('active');
+            targetDot.classList.add('visited'); 
+        };
+
+        
+        dotsNav.addEventListener('click', (e) => {
+            const targetDot = e.target.closest('span'); 
+
+            if (!targetDot) return; 
+
+            const currentSlide = track.querySelector('.active-slide');
+            const currentDot = dotsNav.querySelector('.active');
+            const targetIndex = dots.findIndex(dot => dot === targetDot);
+            const targetSlide = slides[targetIndex];
+
+            
+            moveToSlide(track, currentSlide, targetSlide);
+
+            
+            updateDots(currentDot, targetDot);
+        });
+
+        
+        slides[0].classList.add('active-slide');
+        dots[0].classList.add('active', 'visited');
+    </script>
+</body>
+
+</html>

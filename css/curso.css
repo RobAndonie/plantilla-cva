@@ -206,3 +206,48 @@
   .carousel-dot.visited {
     background-color: #555; 
   }
+
+  /* Footer */
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.footer-nav a {
+    position: relative;
+    font-size: 15px;
+    color: var(--dark-color);
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.footer-nav a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--dark-color);
+    transition: 0.3s;
+}
+
+.footer-nav a:hover::before {
+    width: 100%;
+}

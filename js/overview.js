@@ -85,3 +85,45 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const accordionHeaders = document.querySelectorAll(
+    ".overview-modules-accordion-header"
+  );
+
+  accordionHeaders.forEach((header) => {
+    const name = header.getAttribute("data-content");
+
+    header.innerHTML = `<span class="material-symbols-outlined">
+                        keyboard_arrow_down
+                        </span>
+                        <h3>${name}</h3>`;
+
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+
+      // Toggle active state
+      const isActive = header.classList.contains("active");
+
+      if (isActive) {
+        document
+          .querySelectorAll(".overview-modules-accordion-header")
+          .forEach((h) => h.classList.remove("active"));
+        document
+          .querySelectorAll(".overview-modules-accordion-content")
+          .forEach((c) => (c.style.display = "none"));
+
+        header.innerHTML = `<span class="material-symbols-outlined">
+                keyboard_arrow_down
+              </span> <h3>${name}</h3>`;
+      } else {
+        header.classList.add("active");
+        content.style.display = "block";
+
+        header.innerHTML = `<span class="material-symbols-outlined">
+                keyboard_arrow_up
+              </span> <h3>${name}</h3>`;
+      }
+    });
+  });
+});

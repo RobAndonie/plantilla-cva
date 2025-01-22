@@ -1,3 +1,7 @@
+.overview {
+    background-color: var(--lighter-color);
+}
+
 .overview-background {
     background-size: cover;
     background-position: center;
@@ -47,7 +51,7 @@
 }
 
 .overview-details {
-    background-color: #fff;
+    background-color: white;
     border-radius: 4px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 
@@ -66,14 +70,16 @@
 }
 
 .overview-details button {
-    background-color: var(--lighter-color);
+    background-color: transparent;
     color: var(--dark-color);
+    border-bottom: var(--primary-color) 2px solid;
+    border-radius: 0%;
 }
 
 .overview-details button.active {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
+    background-color: rgb(0, 84, 166, 0.1);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
 .overview-details-content {
@@ -84,4 +90,68 @@
 
 .overview-details li {
     list-style-position: inside;
+}
+
+.overview-modules {
+    margin: 4rem 6rem 0rem 6rem;
+}
+
+.overview-modules-accordion {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.overview-modules-accordion-header {
+    background: var(--primary-color);
+    color: var(--lighter-color);
+    text-align: left;
+    border-radius: 0%;
+
+    width: 100%;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.overview-modules-accordion-header:hover {
+    background: #003366;
+}
+
+.overview-modules-accordion-content {
+    background: #fff;
+
+    display: none;
+}
+
+.overview-modules-accordion-content ul {
+    list-style: none;
+}
+
+.overview-modules-accordion-content li {
+    padding: 0.5rem 1rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.overview-modules-accordion-content li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.whitespace {
+    height: 20rem;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }

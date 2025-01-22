@@ -11,31 +11,67 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=schedulegroupsstar"
     />
+
+    <script src="../../js/overview.js" defer></script>
   </head>
 
-  <body>
-    <header class="course-header">
-      <div>
+  <body class="overview">
+    <header class="overview-background">
+      <div class="overview-header">
         <h1>Curso: Fundamentos de Programación</h1>
-        <div class="course-specs">
-          <span class="course-spec">
+        <div class="overview-specs">
+          <span class="overview-spec">
             <span class="material-symbols-outlined"> schedule </span>
             8 horas</span
           >
-          <span class="course-spec">
+          <span class="overview-spec">
             <span class="material-symbols-outlined"> groups </span>
             1,405 estudiantes</span
           >
-          <span class="course-spec">
+          <span class="overview-spec">
             <span class="material-symbols-outlined"> star </span>
             4.6 (940 reseñas)</span
           >
         </div>
-      </div>
-      <div class="course-ctas">
-        <button class="course-start-btn">Comenzar</button>
-        <button class="course-modules-btn">Ver módulos</button>
+
+        <div class="overview-ctas">
+          <button class="overview-start-btn">Comenzar</button>
+          <button class="overview-modules-btn">Ver módulos</button>
+        </div>
       </div>
     </header>
+
+    <main>
+      <section class="overview-details">
+        <div class="overview-details-btns">
+          <button data-content="description">Descripción</button>
+          <button data-content="objectives">Objetivos</button>
+          <button data-content="concept-map">Mapa conceptual</button>
+          <button data-content="learning-outcomes">
+            Resultados de aprendizaje
+          </button>
+          <button data-content="policies">Políticas</button>
+        </div>
+
+        <div class="overview-details-content">
+          <h3>¡Bienvenido al curso!</h3>
+          <p>
+            Aprende los fundamentos de la programación y la lógica de la
+            programación con este curso. Aprenderás a programar en Python y
+            JavaScript, dos de los lenguajes de programación más populares y
+            versátiles.
+          </p>
+
+          <h4>Lo que aprenderás</h4>
+          <ul>
+            <li>Programación en Python y JavaScript</li>
+            <li>Fundamentos de la programación</li>
+            <li>Desarrollo de habilidades de resolución de problemas</li>
+          </ul>
+        </div>
+      </section>
+
+      <section></section>
+    </main>
   </body>
 </html>

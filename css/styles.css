@@ -1,7 +1,9 @@
 /* Reset básico */
 * {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -16,4 +18,38 @@ h1 {
 h2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+button {
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+
+    padding: 0.5rem 1rem;
+
+    cursor: pointer;
+}
+
+:root {
+
+    --primary-color: #0054a6;
+    /* Royal blue color code:  */
+
+    --secondary-color: #6c757d;
+    /* Gray color */
+
+    --light-color: silver;
+    /* Light gray color */
+
+    --lighter-color: #f4f4f4;
+    /* Lighter gray color */
+
+    --dark-color: #1c1f21;
+    /* Dark gray color */
+
 }

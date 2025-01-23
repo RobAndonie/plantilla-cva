@@ -168,37 +168,78 @@
 
 
 .concard {
-    display: flex; /* Define el contenedor como un flexbox */
-    flex-direction: row; /* Asegura que los elementos hijos estén en fila */
-    justify-content: center; /* Centra las tarjetas horizontalmente */
-    align-items: flex-start; /* Alinea las tarjetas verticalmente al inicio */
-    gap: 2rem; /* Espaciado entre las tarjetas */
-    padding: 0.2rem; /* Espaciado interno opcional */
-    margin-top: -1rem; /* Espaciado superior opcional */
-    margin-left:17rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 0.2rem;
+    margin-top: -1rem;
+    margin-left: 17rem;
 }
-
 
 .card {
     display: flex;
-    height:auto;
     flex-direction: column;
-    width: 300px; /* Ancho fijo para mantener uniformidad */
+    width: 300px;
+    min-height: 350px;
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
+    position: relative; 
 }
 
 .img_ce {
-    width: 100%; /* Asegura que las imágenes ocupen todo el ancho de la tarjeta */
-    height: 300px; /* Altura fija para las imágenes */
-    object-fit: cover; /* Recorta las imágenes proporcionalmente sin distorsión */
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.5s;
 }
 
 .introo {
-    height:200px;
-    width:350px;
-    padding: 3rem; /* Espaciado interno para el contenido */
+    max-height: 100px; 
+    width: 320px;
+    padding: 1rem;
     box-sizing: border-box;
+    background-color: var(--secondary-color);
+    color: var(--lighter-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto; /* Permitir scroll cuando el contenido es más grande */
+    transition: 0.5s;
+}
+
+h4 {
+    margin-top: -10px;
+    font-size: 20px;
+}
+
+.p1 {
+    font-size: 15px;
+    margin-top: 20px;
+    padding-left: 9px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .introo {
+    max-height: 200px; /* Incrementa la altura cuando se hace hover */
+    background: var(--dark-color);
+    overflow: auto; /* Sigue permitiendo el scroll */
+}
+
+.card:hover .p1 {
+    visibility: visible; 
+    opacity: 1; 
+}
+
+.card:hover .img_ce{
+    transform: scale(1.1) rotate(-5deg);
 }
 
 

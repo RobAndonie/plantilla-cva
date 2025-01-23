@@ -163,9 +163,9 @@
 }
 
 .content iframe {
-    width: 100%; /* Make the iframe take the full width of its container */
+    width: 100%; 
     max-width: 100%;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto; 
 }
 
 /* Carrusel deslizante */

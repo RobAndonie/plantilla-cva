@@ -12,7 +12,7 @@ class NavBar extends HTMLElement {
                     width="150px" height="40">
                 </div>
                 <nav class="navbar">
-                    <a href="#">Menu</a>
+                    <a href="#">Menú</a>
                     <a href="#">Objetivos</a>
                     <a href="#">Metodología</a>
                     <a href="#">Políticas de Evaluación</a>

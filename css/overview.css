@@ -93,7 +93,7 @@
 }
 
 .overview-modules {
-    margin: 4rem 6rem 0rem 6rem;
+    margin: 4rem 6rem 6rem 6rem;
 }
 
 .overview-modules-accordion {
@@ -115,7 +115,7 @@
     gap: 0.5rem;
 
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .overview-modules-accordion-header:hover {
@@ -126,6 +126,8 @@
     background: #fff;
 
     display: none;
+
+    transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
 .overview-modules-accordion-content ul {
@@ -142,10 +144,6 @@
 
 .overview-modules-accordion-content li:not(:last-child) {
     border-bottom: 1px solid #eee;
-}
-
-.whitespace {
-    height: 20rem;
 }
 
 .material-symbols-outlined {

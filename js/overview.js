@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Botones de la sección de detalles
   const buttons = document.querySelectorAll(".overview-details-btns button");
   const contentArea = document.querySelector(".overview-details-content");
 
@@ -84,9 +85,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (content[key]) contentArea.innerHTML = content[key];
     });
   });
-});
 
-document.addEventListener("DOMContentLoaded", () => {
+  // Accordion de módulos
   const accordionHeaders = document.querySelectorAll(
     ".overview-modules-accordion-header"
   );
@@ -101,18 +101,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     header.addEventListener("click", () => {
       const content = header.nextElementSibling;
-
-      // Toggle active state
       const isActive = header.classList.contains("active");
 
       if (isActive) {
-        document
-          .querySelectorAll(".overview-modules-accordion-header")
-          .forEach((h) => h.classList.remove("active"));
-        document
-          .querySelectorAll(".overview-modules-accordion-content")
-          .forEach((c) => (c.style.display = "none"));
-
+        header.classList.remove("active");
+        content.style.display = "none";
         header.innerHTML = `<span class="material-symbols-outlined">
                 keyboard_arrow_down
               </span> <h3>${name}</h3>`;

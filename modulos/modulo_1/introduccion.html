@@ -6,20 +6,16 @@
     <title>Plantilla de Curso</title>
     <link rel="stylesheet" href="../../css/styles.css" />
     <link rel="stylesheet" href="../../css/curso.css" />
+    <script src="../../components/navbar.js"defer></script>
+    <script src="../../components/sidebar.js"defer></script>
+    <script src="../../components/footer.js"defer></script>
   </head>
   <body display="flex">
     <div class="container">
-      <!-- Menú lateral -->
-      <aside class="sidebar", >
-        <h2>Módulos</h2>
-        <ul>
-          <li><a href="#introduccion">Bienvenida al curso</a></li>
-          <li><a href="#modulo2">Módulo 2: Conceptos Básicos</a></li>
-          <li><a href="#modulo3">Módulo 3: Ejercicios Prácticos</a></li>
-          <li><a href="#modulo4">Módulo 4: Evaluación</a></li>
-        </ul>
+      <nav-bar></nav-bar>
+      <aside class="sidebar">
+        <side-bar></side-bar>
       </aside>
-
       <!-- Contenido principal -->
       <main class="content" >
         <section id="modulo1">
@@ -35,5 +31,6 @@
         </section>
       </main>
     </div>
+    <footer-comp></footer-comp>
   </body>
 </html>

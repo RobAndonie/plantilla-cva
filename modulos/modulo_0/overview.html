@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Overview de curso</title>
     <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../css/navbar.css" />
     <link rel="stylesheet" href="../../css/overview.css" />
 
     <link
@@ -18,35 +19,39 @@
     />
 
     <script src="../../js/overview.js" defer></script>
+    <script src="../../components/navbar.js" defer></script>
+    <script src="../../components/footer.js" defer></script>
   </head>
 
   <body class="overview">
-    <header class="overview-background">
-      <div class="overview-header">
-        <h1>Curso: Fundamentos de Programación</h1>
-        <div class="overview-specs">
-          <span class="overview-spec">
-            <span class="material-symbols-outlined"> schedule </span>
-            8 horas</span
-          >
-          <span class="overview-spec">
-            <span class="material-symbols-outlined"> groups </span>
-            1,405 estudiantes</span
-          >
-          <span class="overview-spec">
-            <span class="material-symbols-outlined"> star </span>
-            4.6 (940 reseñas)</span
-          >
-        </div>
-
-        <div class="overview-ctas">
-          <button class="overview-start-btn">Comenzar</button>
-          <button class="overview-modules-btn">Ver módulos</button>
-        </div>
-      </div>
-    </header>
+    <nav-bar> </nav-bar>
 
     <main>
+      <section class="overview-background">
+        <div class="overview-header">
+          <h1>Curso: Fundamentos de Programación</h1>
+          <div class="overview-specs">
+            <span class="overview-spec">
+              <span class="material-symbols-outlined"> schedule </span>
+              8 horas</span
+            >
+            <span class="overview-spec">
+              <span class="material-symbols-outlined"> groups </span>
+              1,405 estudiantes</span
+            >
+            <span class="overview-spec">
+              <span class="material-symbols-outlined"> star </span>
+              4.6 (940 reseñas)</span
+            >
+          </div>
+
+          <div class="overview-ctas">
+            <button class="overview-start-btn">Comenzar</button>
+            <button class="overview-modules-btn">Ver módulos</button>
+          </div>
+        </div>
+      </section>
+
       <section class="overview-details">
         <div class="overview-details-btns">
           <button data-content="description">Descripción</button>
@@ -182,5 +187,7 @@
       </section>
       <section class="whitespace"></section>
     </main>
+
+    <footer-comp> </footer-comp>
   </body>
 </html>

@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Botones de la sección de detalles
   const buttons = document.querySelectorAll(".overview-details-btns button");
   const contentArea = document.querySelector(".overview-details-content");
 
@@ -84,9 +85,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (content[key]) contentArea.innerHTML = content[key];
     });
   });
-});
 
-document.addEventListener("DOMContentLoaded", () => {
+  // Accordion de módulos
   const accordionHeaders = document.querySelectorAll(
     ".overview-modules-accordion-header"
   );

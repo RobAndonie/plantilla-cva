@@ -9,7 +9,7 @@
 
 .overview-header {
     background-color: var(--primary-color);
-    color: var(--lighter-color);
+    color: white;
 
     padding: 4rem 6rem 6rem 6rem;
 
@@ -35,7 +35,7 @@
 }
 
 .overview-start-btn {
-    background-color: var(--lighter-color);
+    background-color: white;
     color: var(--dark-color);
     font-weight: 600;
     border: none;
@@ -46,8 +46,8 @@
 
 .overview-modules-btn {
     background-color: transparent;
-    color: var(--lighter-color);
-    border: var(--lighter-color) 1px solid;
+    color: white;
+    border: white 1px solid;
 }
 
 .overview-details {
@@ -103,7 +103,7 @@
 
 .overview-modules-accordion-header {
     background: var(--primary-color);
-    color: var(--lighter-color);
+    color: white;
     text-align: left;
     border-radius: 0%;
 

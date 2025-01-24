@@ -12,7 +12,7 @@ class SideBar extends HTMLElement {
                         <div class="sidebar-module-header">
                             <span class="sidebar-module-num">Módulo 1</span>
                             <div class="sidebar-module-name">
-                                <h4>Introducción</h4>
+                                <h4>Introducción al cambio climatico</h4>
                                 <span class="material-symbols-outlined">keyboard_arrow_down</span>
                             </div>
                         </div>
@@ -20,6 +20,10 @@ class SideBar extends HTMLElement {
                             <li><a href="../modulo_1/introduccion.html">Lección 1: Introducción al Curso</a></li>
                             <li><a href="../modulo_1/objetivos.html">Lección 2: Objetivos</a></li>
                             <li><a href="../modulo_1/preguntas.html">Lección 3: Preguntas Comunes</a></li>
+                            <li><a href="../modulo_1/leccion1_14.html">Lección 14: ¿A quién afecta el cambio climático?</a></li>
+                            <li><a href="../modulo_1/leccion1_15.html">Lección 15: ¿Quién es responsable del cambio climático?</a></li>
+                            <li><a href="../modulo_1/leccion1_16.html">Lección 16: Explicación de la justicia climática</a></li>
+                            <li><a href="../modulo_1/leccion1_17.html">Lección 17: Cuatro imperativos para la acción</a></li>
                         </ul>
                     </li>
   

@@ -188,6 +188,15 @@
     margin-left: 15px;
 }
 
+.img_circulo{
+    display: flex;
+    width: 170%;
+    height: auto; 
+    margin-left: 40px;
+
+}
+
+
 
 .center-image {
     display: block;

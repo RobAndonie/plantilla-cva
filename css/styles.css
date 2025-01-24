@@ -53,3 +53,10 @@ button {
     /* Dark gray color */
 
 }
+
+audio {
+    width: 300px;
+    height: 54px;
+    justify-content: center;
+}
+

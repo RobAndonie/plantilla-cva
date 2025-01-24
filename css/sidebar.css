@@ -17,7 +17,7 @@
 }
 
 .sidebar-module {
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--lighter-color);
     border-radius: 8px;
 }
 
@@ -30,7 +30,7 @@
 
 .sidebar-module-header {
     background: rgb(0, 84, 166, 0.1);
-    height: 4rem;
+    height: 5rem;
     font-weight: bold;
     border-radius: 8px;
 

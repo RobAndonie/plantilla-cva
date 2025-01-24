@@ -6,17 +6,21 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Plantilla de Curso</title>
       <link rel="stylesheet" href="../../css/styles.css" />
-      <link rel="stylesheet" href="../../css/impactglobal.css" />
-      <script src="../../components/navbar.js"defer></script>
-      <script src="../../components/sidebar.js"defer></script>
-      <script src="../../components/footer.js"defer></script>
+      <link rel="stylesheet" href="../../css/navbar.css" />
+      <link rel="stylesheet" href="../../css/curso.css" />
+      <link rel="stylesheet" href="../../css/sidebar.css" />
+      <link rel="stylesheet" href="../../css/footer.css" />
+      <link rel="stylesheet" href="../../css/navigationbuttons.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+      <script src="../../components/navbar.js" defer></script>
+      <script src="../../components/sidebar.js" defer></script>
+      <script src="../../components/footer.js" defer></script>
     </head>
-    <body display="flex">
+    <body>
+      <nav-bar></nav-bar>
       <div class="container">
-        <nav-bar></nav-bar>
-        <aside class="sidebar">
-          <side-bar></side-bar>
-        </aside>
+
+        <side-bar></side-bar>
       <!-- Contenido principal -->
       <main class="content" >
         <section id="modulo1">
@@ -85,6 +89,11 @@
         </div>
       </div>
     </div>
+    <div class="navigation-buttons">
+      <a href="../modulo_1/impactglobal1-11.html" class="button">Back</a>
+      <a href="../modulo_1/impactglobal1-13.html" class="button">Next</a>
+    </div>
+
     <footer-comp></footer-comp>
   </body>
 </html>

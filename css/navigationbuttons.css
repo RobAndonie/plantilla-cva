@@ -1,0 +1,18 @@
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.navigation-buttons .button {
+    background-color: var(--primary-color);
+    color: var(--lighter-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.navigation-buttons .button:hover {
+    filter: brightness(85%);
+}

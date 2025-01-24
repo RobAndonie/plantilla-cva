@@ -121,7 +121,6 @@
 .container {
     display: flex;
     width: 100%;
-    margin-top: 7rem;
 }
 
 
@@ -164,75 +163,144 @@
     width: 80%;
     padding: 2rem;
     overflow-y: auto;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 
 .content h2 {
     font-size: 2.25rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
     text-align: center;
+}
+
+.content h3 {
+    font-size: 1.75rem;
+    margin: 5%;
+    text-align: left;
+    margin-bottom: 0.75rem;
 }
 
 .content p {
     font-size: 1.5rem;
+    margin: 5%;
     margin-bottom: 1rem;
-    line-height: 1.6;
+    margin-top: 1.5rem;
+}
+
+.content ol {
+    list-style: decimal;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-sizing: inherit;
+    list-style-position: inside;
+}
+
+.content ul {
+    margin-left: 5%;
+    margin-right: 5%;
+    box-sizing: inherit;
+    list-style-position: inside;
+}
+
+.content li {
+    display: list-item;
+    margin-bottom: .5rem;
+    font-size: 1.4rem;
 }
 
 .center-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3rem;
+}
+
+.content-video-thumbnail {
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.content iframe {
+    width: 90%; 
+    max-width: 100%;
+    margin: 5% auto; 
+    display: block;
 }
 
 /* Carrusel deslizante */
-
 .carousel {
     position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
+    width: 100%;          
+    max-width: 900px;     
+    margin: 0 auto;       
     overflow: hidden;
-  }
-  
-  .carousel-track {
+    padding: 0;           
+}
+
+.carousel-track {
     display: flex;
     transition: transform 0.3s ease-in-out;
-  }
-  
-  .carousel-slide {
+    margin: 0;            
+    padding: 0;           
+}
+
+.carousel-slide {
     min-width: 100%;
     text-align: center;
-  }
-  
-  .carousel-slide img {
+    padding: 0;           
+}
+
+.carousel-slide img {
     width: 100%;
     height: auto;
-  }
-  
-  .carousel-nav {
+    display: block;       
+    margin: 0;           
+}
+
+
+.carousel-slide h2 {
+    margin: 10px 0;      
+}
+
+.carousel-nav {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .carousel-dot {
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
+    margin: 20px 0;     /* Aumentamos el margen para dar más espacio */
+    padding: 0;          
+    width: 100%;
+    position: relative;  /* Asegura que los puntos se mantengan en posición */
+    z-index: 2;         /* Asegura que los puntos estén por encima del contenido */
+}
+
+.carousel-dot {
+    width: 12px;         /* Hacemos los puntos un poco más grandes */
+    height: 12px;
+    margin: 0 8px;       /* Más espacio entre puntos */
     background-color: #ccc;
     border-radius: 50%;
     cursor: pointer;
-  }
-  
-  .carousel-dot.active {
-    background-color: #333;
-  }
+    transition: background-color 0.3s ease;
+    display: inline-block;  /* Asegura que el punto sea visible */
+}
 
-  .carousel-dot.visited {
-    background-color: #555; 
-  }
+.carousel-dot.active {
+    background-color: #333;
+    transform: scale(1.2);  /* Hace el punto activo ligeramente más grande */
+}
+
+.carousel-dot.visited {
+    background-color: #555;
+}
+
+.carousel-dot:hover {
+    background-color: #999;
+}
+
 
   /* Footer */
 
@@ -278,3 +346,13 @@
 .footer-nav a:hover::before {
     width: 100%;
 }
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+

@@ -147,11 +147,39 @@
     text-align: center;
 }
 
+.content h3 {
+    font-size: 1.75rem;
+    margin: 5%;
+    text-align: left;
+    margin-bottom: 0.75rem;
+}
+
 .content p {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
-    line-height: 1.6;
     margin: 5%;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.content ol {
+    list-style: decimal;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-sizing: inherit;
+    list-style-position: inside;
+}
+
+.content ul {
+    margin-left: 5%;
+    margin-right: 5%;
+    box-sizing: inherit;
+    list-style-position: inside;
+}
+
+.content li {
+    display: list-item;
+    margin-bottom: .5rem;
+    font-size: 1.4rem;
 }
 
 .center-image {
@@ -161,10 +189,20 @@
     margin-bottom: 3rem;
 }
 
+.content-video-thumbnail {
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
 .content iframe {
-    width: 100%; 
+    width: 90%; 
     max-width: 100%;
-    margin: 0 auto; 
+    margin: 5% auto; 
+    display: block;
 }
 
 /* Carrusel deslizante */
@@ -282,20 +320,6 @@
     width: 100%;
 }
 
-/* Iframe */
-
-.iframe-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Adjust this to match the width of your text container */
-    margin: 0 auto; /* Center the container */
-}
-
-.iframe-container iframe {
-    width: 100%; /* Make the iframe take the full width of its container */
-    max-width: 100%;
-}
 
 .material-symbols-outlined {
     font-variation-settings:
@@ -304,3 +328,4 @@
         'GRAD' 0,
         'opsz' 24
 }
+

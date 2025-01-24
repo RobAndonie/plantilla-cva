@@ -5,21 +5,24 @@ class NavBar extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-            <header class="header">
-                <div class="logo-container">
-                    <img class="logo" src="../../images/CVA LOGOTIPO.png" width="200px" height="40">
-                    <img class="logo" src="../../images/logo_largo.png" width="150px" height="40">
+            <header class="nav-header">
+                <div class="nav-logo-container">
+                    <img class="nav-logo" src="../../images/tec_blanco.png"
+                    width="150px" >
+                    <img class="nav-logo" src="../../images/CVA LOGOTIPO.png"
+                    width="200px" >
                 </div>
-                <nav class="navbar">
-                    <a href="#">Menú</a>
+
+                <nav class="nav-navbar">
+                    <a href="#">Menu</a>
                     <a href="#">Objetivos</a>
                     <a href="#">Metodología</a>
                     <a href="#">Políticas de Evaluación</a>
                 </nav>
-                <div class="search">
+                <div class="nav-search">
                     <form id="search-form">
-                        <div class="input-container">
-                            <img src="../../images/lupa.png" class="icon" alt="Lupa">
+                        <div class="nav-input-container">
+                            <img src="../../images/lupa.png" class="nav-icon" alt="Lupa">
                             <input type="text" placeholder="Buscar..." id="input-box" autocomplete="off">
                             <a id="dynamic-link" href="#" class="button">Enviar</a>
                         </div>

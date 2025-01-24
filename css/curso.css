@@ -188,6 +188,13 @@
     margin-top: 1.5rem;
 }
 
+.content img{
+    float: right;
+    width:45%;
+    margin-left: 15px;
+    margin-right: 5%;
+}
+
 .content ol {
     list-style: decimal;
     margin-left: 5%;

@@ -1,57 +1,275 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plataforma de Cursos</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
 
-  <body>
-    <header>
-      <h1>Bienvenido a la Plataforma de Cursos</h1>
-      <nav>
-        <ul>
-          <li><a href="modulos/modulo_0/overview.html">Inicio</a></li>
-          <li><a href="modulos/modulo_0/curso.html">Cursos</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overview de curso</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/overview.css" />
 
-    <main>
-      <section class="hero">
-        <h2>Aprende a tu propio ritmo</h2>
-        <p>
-          Explora una variedad de cursos diseñados para que desarrolles tus
-          habilidades.
-        </p>
-        <a href="modulos/modulo_0/curso.html" class="btn">Ver Cursos</a>
-      </section>
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-      <section class="courses">
-        <h2>Cursos Destacados</h2>
-        <ul>
-          <li>
-            <h3>Curso 1: Fundamentos de Programación</h3>
-            <p>
-              Aprende las bases de la programación con ejercicios prácticos.
-            </p>
-            <a href="modulos/modulo_0/overview.html" class="btn">Ver Curso</a>
-          </li>
 
-          <li>
-            <h3>Curso 2: Diseño Web</h3>
-            <p>Crea páginas web desde cero con HTML, CSS y JavaScript.</p>
-            <a href="modulos/modulo_0/curso.html" class="btn">Ver Curso</a>
-          </li>
-        </ul>
-      </section>
-    </main>
 
-    <footer id="contacto">
-      <p>&copy; 2025 Plataforma de Cursos. Todos los derechos reservados.</p>
-      <p>Contacto: soporte@cursosuniversidad.com</p>
-    </footer>
-  </body>
+  <script src="../js/overview.js" defer></script>
+  <script src="../components/navbar.js" defer></script>
+  <script src="../components/footer.js" defer></script>
+</head>
+
+<body class="overview">
+  <nav-bar> </nav-bar>
+
+  <main>
+    <section class="overview-background">
+      <div class="overview-header">
+        <h1>Soluciones climáticas en México</h1>
+        <div class="overview-specs">
+          <span class="overview-spec">
+            <span class="material-symbols-outlined"> schedule </span>
+            8 horas</span>
+          <span class="overview-spec">
+            <span class="material-symbols-outlined">
+              description
+              </span>
+            5 módulos</span>
+
+        </div>
+
+        <div class="overview-ctas">
+          <button class="overview-start-btn">Comenzar</button>
+          <button class="overview-modules-btn">Ver módulos</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="overview-details">
+      <div class="overview-details-btns">
+        <button data-content="description">Descripción</button>
+        <button data-content="learning-outcomes">
+          Resultados de aprendizaje
+        </button>
+        <button data-content="additionalresources">Recursos adicionales</button>
+      </div>
+
+      <div class="overview-details-content">
+      </div>
+    </section>
+
+    <section class="overview-modules">
+      <h2>Módulos del curso</h2>
+
+<div class="overview-modules-accordion-item">
+  <button class="overview-modules-accordion-header" data-content="Módulo 1: Introducción al cambio climático">
+    <h3>Módulo 1: Introducción al cambio climático</h3>
+  </button>
+  <div class="overview-modules-accordion-content">
+    <ul>
+      <li>
+        <div class="module-section">
+          <div class="lesson-content">
+            <a href="../modulos/modulo_1/leccion1_1.html" class="lesson-link">
+              <span class="material-symbols-outlined">description</span>
+              Sección 1: Empezar
+            </a>
+          </div>
+          <p class="section-description">
+            Conoce al equipo que creó y gestiona este curso y descubre más sobre lo que aprenderás.
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="module-section">
+          <div class="lesson-content">
+            <span class="material-symbols-outlined">description</span>
+            Sección 2: Introducción
+          </div>
+          <p class="section-description">
+            Introducción general al curso y sus objetivos principales.
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="module-section">
+          <div class="lesson-content">
+            <span class="material-symbols-outlined">description</span>
+            Sección 3: ¿Qué es el cambio climático?
+          </div>
+          <p class="section-description">
+            Comprende los conceptos fundamentales del cambio climático y sus causas principales.
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="module-section">
+          <div class="lesson-content">
+            <a href="../modulos/modulo_1/leccion1_10.html" class="lesson-link">
+              <span class="material-symbols-outlined">description</span>
+              Sección 4: Los impactos global del cambio climático
+            </a>
+          </div>
+          <p class="section-description">
+            Explora los efectos del cambio climático a nivel mundial y sus consecuencias.
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="module-section">
+          <div class="lesson-content">
+            <a href="../modulos/modulo_1/leccion1_10.html" class="lesson-link">
+              <span class="material-symbols-outlined">description</span>
+              Sección 5: Justicia climática
+            </a>
+          </div>
+          <p class="section-description">
+            Analiza las implicaciones sociales y éticas del cambio climático y sus impactos diferenciados.
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="module-section">
+          <div class="lesson-content">
+            <a href="../modulos/modulo_1/quiz.html" class="lesson-link">
+              <span class="material-symbols-outlined">quiz</span>
+              Quiz: Evaluación de conocimientos
+            </a>
+          </div>
+          <p class="section-description">
+            Evalúa tu comprensión de los conceptos clave del módulo.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+        <div class="overview-modules-accordion-item">
+          <button class="overview-modules-accordion-header" data-content="Módulo 2: Ciencia climática">
+            <h3>Módulo 2: Ciencia climática</h3>
+          </button>
+          <div class="overview-modules-accordion-content">
+            <ul>
+              <li>
+                <span class="material-symbols-outlined"> play_arrow </span>
+                Lección 2.1: Variables
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> play_arrow </span>
+                Lección 2.2: Tipos de datos
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> play_arrow </span>
+                Lección 2.3: Condicionales
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> play_arrow </span>
+                Lección 2.4: Bucles
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> description </span>
+                Lección 2.5: Resumen del módulo
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="overview-modules-accordion-item">
+          <button class="overview-modules-accordion-header" data-content="Módulo 3: Impactos del cambio climático">
+            <h3>Módulo 3: Impactos del cambio climático</h3>
+          </button>
+          <div class="overview-modules-accordion-content">
+            <ul>
+              <li>
+                <span class="material-symbols-outlined"> play_arrow </span>
+                Lección 3.1: Diseño del proyecto
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> play_arrow </span>
+                Lección 3.2: Desarrollo
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> play_arrow </span>
+                Lección 3.3: Testing
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> play_arrow </span>
+                Lección 3.4: Deploy
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> description </span>
+                Lección 3.5: Resumen del curso
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="overview-modules-accordion-item">
+          <button class="overview-modules-accordion-header" data-content="Módulo 4: Gestión del riesgo climático">
+            <h3>Módulo 4: Gestión del riesgo climático</h3>
+          </button>
+          <div class="overview-modules-accordion-content">
+            <ul>
+              <li>
+                <span class="material-symbols-outlined"> play_arrow </span>
+                Lección 3.1: Diseño del proyecto
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> play_arrow </span>
+                Lección 3.2: Desarrollo
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> play_arrow </span>
+                Lección 3.3: Testing
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> play_arrow </span>
+                Lección 3.4: Deploy
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> description </span>
+                Lección 3.5: Resumen del curso
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="overview-modules-accordion-item">
+          <button class="overview-modules-accordion-header" data-content="Módulo 5: Soluciones climáticas globales">
+            <h3>Módulo 5: Soluciones climáticas globales</h3>
+          </button>
+          <div class="overview-modules-accordion-content">
+            <ul>
+              <li>
+                <span class="material-symbols-outlined"> play_arrow </span>
+                Lección 3.1: Diseño del proyecto
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> play_arrow </span>
+                Lección 3.2: Desarrollo
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> play_arrow </span>
+                Lección 3.3: Testing
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> play_arrow </span>
+                Lección 3.4: Deploy
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> description </span>
+                Lección 3.5: Resumen del curso
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer-comp> </footer-comp>
+</body>
+
 </html>

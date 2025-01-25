@@ -8,11 +8,12 @@
 
 body {
     font-family: Arial, sans-serif;
-    height: 100vh;
+    /* min-height: 100vh; */
 }
 
 h1 {
     font-size: 2rem;
+    text-align: center;
 }
 
 h2 {
@@ -37,8 +38,8 @@ button {
 
 :root {
 
-    --primary-color: #006eff;
-    /* Royal blue color code:  */
+    --primary-color: #0D3973;
+    /* Deep navy blue color code:  */
 
     --secondary-color: #6c757d;
     /* Gray color */

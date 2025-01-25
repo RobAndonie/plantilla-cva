@@ -9,12 +9,12 @@ class NavBar extends HTMLElement {
                 <div class="nav-logo-container">
                     <img class="nav-logo" src="../../images/tec_blanco.png"
                     width="150px" >
-                    <img class="nav-logo" src="../../images/CVA LOGOTIPO.png"
+                    <img class="nav-logo" src="../../images/LOGOTIPO CVA BLANCO.png"
                     width="200px" >
                 </div>
 
                 <nav class="nav-navbar">
-                    <a href="#">Menu</a>
+                    <a href="#">Menú</a>
                     <a href="#">Objetivos</a>
                     <a href="#">Metodología</a>
                     <a href="#">Políticas de Evaluación</a>

@@ -84,10 +84,10 @@
 
 .nav-search a {
     padding: 10px;
-    background-color: var(--primary-color);
+    background-color: #8C2703;
     border: none; 
     border-radius: 6px;
-    color: var(--dark-color);
+    color: white;
     font-size: 12px;
     text-decoration: none; 
     text-align: center; 

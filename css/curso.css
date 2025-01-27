@@ -1,4 +1,3 @@
-
 /* Nav bar */
 
 .header{
@@ -165,10 +164,10 @@
 
 .img_circulo {
     display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    width: 90rem; /* Asegura que el contenedor ocupe todo el espacio disponible */
-    height: auto; /* Ajusta la altura según sea necesario */
+    justify-content: center;
+    align-items: center;
+    width: 90rem; 
+    height: auto; 
     margin-left: -8rem;
 }
 

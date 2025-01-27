@@ -18,6 +18,8 @@ class SideBar extends HTMLElement {
                         </div>
                         <ul class="sidebar-module-lessons">
                             <li><a href="../modulo_1/introduccion.html">Lección 1: Introducción al Curso</a></li>
+                            <li><a href="../modulo_1/leccion1_2.html">Colaboradores</a></li>
+                            <li><a href="../modulo_1/leccion1_3.html">Conoce al equipo</a></li>
                             <li><a href="../modulo_1/impactglobal1-10.html">Lección 10: Cambio climático global pero distribuido de manera desigual</a></li>
                             <li><a href="../modulo_1/impactglobal1-11.html">Lección 11: Impulsores, cambios e impactos</a></li>
                             <li><a href="../modulo_1/impactglobal1-12.html">Lección 12: Impactos climáticos en los sistemas naturales</a></li>

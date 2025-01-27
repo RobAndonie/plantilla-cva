@@ -154,18 +154,22 @@
     margin-bottom: 1rem;
     margin-top: 1.5rem;
 }
-.content img{
-    float: right;
-    width:45%;
-    margin-left: 15px;
+.content img {
+    float: right; 
+    width: 45%; 
+    margin-left: 6px;
+    margin-bottom: 1rem;
+    margin-right: 60px;
 }
 
-.img_circulo{
-    display: flex;
-    width: 170%;
-    height: auto; 
-    margin-left: 40px;
 
+.img_circulo {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    width: 90rem; /* Asegura que el contenedor ocupe todo el espacio disponible */
+    height: auto; /* Ajusta la altura según sea necesario */
+    margin-left: -8rem;
 }
 
 .content ol {
@@ -189,11 +193,6 @@
     font-size: 1.4rem;
 }
 
-.center-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 
 .concard {
@@ -201,8 +200,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    gap: 2rem;
-    padding: 0.2rem;
+    gap: 1rem;
+    padding: 0.1rem 1rem; 
     margin-top: -1rem;
     margin-left: 17rem;
 }

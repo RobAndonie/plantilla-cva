@@ -17,9 +17,15 @@ class SideBar extends HTMLElement {
                             </div>
                         </div>
                         <ul class="sidebar-module-lessons">
-                            <li><a href="../modulo_1/leccion1_1">Lección 1: Introducción al Curso</a></li>
+                            <li><a href="../modulo_1/leccion1_1.html">Lección 1: Introducción al Curso</a></li>
                             <li><a href="../modulo_1/leccion1_2.html">Colaboradores</a></li>
                             <li><a href="../modulo_1/leccion1_3.html">Conoce al equipo</a></li>
+                            <li><a href="../modulo_1/leccion1_4.html">Lección 4: -</a></li>
+                            <li><a href="../modulo_1/leccion1_5.html">Lección 5: -</a></li>
+                            <li><a href="../modulo_1/leccion1_6.html">Lección 6: -----?</a></li>
+                            <li><a href="../modulo_1/leccion1_7.html">Lección 7: -----?</a></li>
+                            <li><a href="../modulo_1/leccion1_8.html">Lección 8: ----- ?</a></li>
+                            <li><a href="../modulo_1/leccion1_9.html">Lección 9: ----- ?</a></li>
                             <li><a href="../modulo_1/leccion1_10.html">Lección 10: Cambio climático global pero distribuido de manera desigual</a></li>
                             <li><a href="../modulo_1/leccion1_11.html">Lección 11: Impulsores, cambios e impactos</a></li>
                             <li><a href="../modulo_1/leccion1_12.html">Lección 12: Impactos climáticos en los sistemas naturales</a></li>
@@ -28,7 +34,7 @@ class SideBar extends HTMLElement {
                             <li><a href="../modulo_1/leccion1_15.html">Lección 15: ¿Quién es responsable del cambio climático?</a></li>
                             <li><a href="../modulo_1/leccion1_16.html">Lección 16: Explicación de la justicia climática</a></li>
                             <li><a href="../modulo_1/leccion1_17.html">Lección 17: Cuatro imperativos para la acción</a></li>
-                            <li><a href="../modulo_1/quiz1.html">Quiz: Repasa lo aprendido</a></li>
+                            <li><a href="../modulo_1/quiz.html">Quiz: ¿Qué has aprendido? </a></li>
                         </ul>
                     </li>
   

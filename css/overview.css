@@ -38,24 +38,32 @@
     align-items: center;
 }
 
-.overview-start-btn {
+.overview-start-btn,
+.overview-share-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;  
+    padding: 0.5rem 1.25rem;  
+    width: 140px;  
+    border: none;
+    border-radius: 4px;
     background-color: white;
     color: var(--dark-color);
     font-weight: 600;
-    border: none;
-    border-radius: 4px;
-
-    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0.9rem;
+    white-space: nowrap;
 }
 
-.overview-modules-btn {
-    background-color: white;
-    color: var(--dark-color);
-    font-weight: 600;
-    border: none;
-    border-radius: 4px;
+.overview-share-btn .material-symbols-outlined {
+    font-size: 16px;
+}
 
-    padding: 0.5rem 1rem;
+.overview-start-btn:hover,
+.overview-share-btn:hover {
+    background-color: #f0f0f0;
 }
 
 .overview-details {
@@ -211,6 +219,25 @@
 
 .resource-link .material-symbols-outlined {
     font-size: 20px;
+}
+
+/* Toast notification */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+.toast.show {
+    opacity: 1;
 }
 
 @media screen and (max-width: 1024px) {

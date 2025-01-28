@@ -152,3 +152,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 });
+
+function compartirCurso() {
+  // Obtener la URL actual
+  const url = window.location.href;
+  
+  // Copiar al portapapeles
+  navigator.clipboard.writeText(url).then(() => {
+      // Crear y mostrar el toast de confirmación
+      const toast = document.createElement('div');
+      toast.className = 'toast';
+      toast.textContent = '¡Enlace copiado al portapapeles!';
+      document.body.appendChild(toast);
+      
+      // Mostrar el toast
+      setTimeout(() => toast.classList.add('show'), 100);
+      
+      // Eliminar el toast después de 3 segundos
+      setTimeout(() => {
+          toast.classList.remove('show');
+          setTimeout(() => document.body.removeChild(toast), 300);
+      }, 3000);
+  }).catch(err => {
+      console.error('Error al copiar:', err);
+  });
+}

@@ -5,19 +5,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Overview de curso</title>
-  <link rel="stylesheet" href="../css/styles.css" />
-  <link rel="stylesheet" href="../css/navbar.css" />
-  <link rel="stylesheet" href="../css/footer.css" />
-  <link rel="stylesheet" href="../css/overview.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/overview.css" />
+
 
   <link rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
 
-  <script src="../js/overview.js" defer></script>
-  <script src="../components/navbar.js" defer></script>
-  <script src="../components/footer.js" defer></script>
+  <script src="js/overview.js" defer></script>
+  <script src="components/navbar.js" defer></script>
+  <script src="components/footer.js" defer></script>
 </head>
 
 <body class="overview">
@@ -41,7 +42,10 @@
 
         <div class="overview-ctas">
           <button class="overview-start-btn">Comenzar</button>
-          <button class="overview-modules-btn">Ver módulos</button>
+          <button class="overview-share-btn" onclick="compartirCurso()">
+            <span class="material-symbols-outlined">share</span>
+            Compartir curso
+          </button>
         </div>
       </div>
     </section>
@@ -71,7 +75,7 @@
       <li>
         <div class="module-section">
           <div class="lesson-content">
-            <a href="../modulos/modulo_1/leccion1_1.html" class="lesson-link">
+            <a href="modulos/modulo_1/leccion1_1.html" class="lesson-link">
               <span class="material-symbols-outlined">description</span>
               Sección 1: Empezar
             </a>
@@ -106,7 +110,7 @@
       <li>
         <div class="module-section">
           <div class="lesson-content">
-            <a href="../modulos/modulo_1/leccion1_10.html" class="lesson-link">
+            <a href="modulos/modulo_1/leccion1_10.html" class="lesson-link">
               <span class="material-symbols-outlined">description</span>
               Sección 4: Los impactos global del cambio climático
             </a>
@@ -119,7 +123,7 @@
       <li>
         <div class="module-section">
           <div class="lesson-content">
-            <a href="../modulos/modulo_1/leccion1_10.html" class="lesson-link">
+            <a href="modulos/modulo_1/leccion1_10.html" class="lesson-link">
               <span class="material-symbols-outlined">description</span>
               Sección 5: Justicia climática
             </a>
@@ -132,7 +136,7 @@
       <li>
         <div class="module-section">
           <div class="lesson-content">
-            <a href="../modulos/modulo_1/quiz.html" class="lesson-link">
+            <a href="modulos/modulo_1/quiz.html" class="lesson-link">
               <span class="material-symbols-outlined">quiz</span>
               Quiz: Evaluación de conocimientos
             </a>

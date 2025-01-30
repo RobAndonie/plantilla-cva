@@ -4,7 +4,7 @@ class NavBar extends HTMLElement {
     }
 
     connectedCallback() {
-        const basePath = window.location.pathname.includes('modulo_1') ? '../../' : './';
+        const basePath = window.location.pathname.includes('/modulo_') ? '../../' : './';
 
         this.innerHTML = `
             <header class="nav-header">

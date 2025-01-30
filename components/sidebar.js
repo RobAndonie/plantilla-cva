@@ -23,9 +23,9 @@ class SideBar extends HTMLElement {
                             <li><a href="../modulo_1/leccion1_4.html">Presentaciones </a></li>
                             <li><a href="../modulo_1/leccion1_5.html">Lección 5: Bienvenidos a la semana 1</a></li>
                             <li><a href="../modulo_1/leccion1_6.html">Lección 6: Quiz: Cuestionario de inicio</a></li>
-                            <li><a href="../modulo_1/leccion1_7.html">Lección 7: Lección 7: ¿Qué es el cambio climático?</a></li>
-                            <li><a href="../modulo_1/leccion1_8.html">Lección 8: Lección 8: ¿Qué dicen los científicos?</a></li>
-                            <li><a href="../modulo_1/leccion1_9.html">Lección 9: Lección 9: ¿Por qué debe importarnos?</a></li>
+                            <li><a href="../modulo_1/leccion1_7.html">Lección 7: ¿Qué es el cambio climático?</a></li>
+                            <li><a href="../modulo_1/leccion1_8.html">Lección 8: ¿Qué dicen los científicos?</a></li>
+                            <li><a href="../modulo_1/leccion1_9.html">Lección 9: ¿Por qué debe importarnos?</a></li>
                             <li><a href="../modulo_1/leccion1_10.html">Lección 10: Cambio climático global pero distribuido de manera desigual</a></li>
                             <li><a href="../modulo_1/leccion1_11.html">Lección 11: Impulsores, cambios e impactos</a></li>
                             <li><a href="../modulo_1/leccion1_12.html">Lección 12: Impactos climáticos en los sistemas naturales</a></li>
@@ -62,8 +62,8 @@ class SideBar extends HTMLElement {
                                 </div>
                         </div>
                         <ul class="sidebar-module-lessons">
-                            <li><a href="../modulo_3/ejercicio1.html">Lección 1: Resolviendo Problemas</a></li>
-                            <li><a href="../modulo_3/ejercicio2.html">Lección 2: Aplicaciones</a></li>
+                            <li><a href="../modulo_3/ejercicio1.html">Ejercicio 1: Los artículos</a></li>
+                            <li><a href="../modulo_3/ejercicio2.html">Lección 2: Relaciona conceptos</a></li>
                         </ul>
                     </li>
                 </ul>

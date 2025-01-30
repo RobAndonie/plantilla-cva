@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../css/curso.css" />
+    <link rel="stylesheet" href="../../css/navbar.css" />
+    <link rel="stylesheet" href="../../css/sidebar.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../css/navigationbuttons.css" />
+    <link rel="stylesheet" href="../../css/grid.css" />
+    <link rel="stylesheet" href="../../css/ejercicio1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="../../components/navbar.js" defer></script>
+    <script src="../../components/sidebar.js" defer></script>
+    <script src="../../components/footer.js" defer></script>
+    <script src="../../js/ejercicio1.js" defer></script>
+</head>
+<body>
+    <nav-bar></nav-bar>
+    <div class="container">
+        <side-bar></side-bar>
+        <main class="content">
+            <div class="exercise-container">
+                <div class="exercise-header">
+                    <div class="exercise-image">
+                        <img src="../../images/ejercicio1.png" alt="Imagen ejercicio">
+                    </div>
+                    <div class="exercise-title">
+                        <h2>Ejercicio 1</h2>
+                        <h3>Los artículos determinados e indeterminados: pequeñas palabras, gran importancia</h3>
+                        <p>Con base en tu conocimiento previo: selecciona el artículo correcto para cada sustantivo en la siguiente historia.</p>
+                    </div>
+                </div>
+
+                <div class="instructions">
+                    <h4>Instrucciones:</h4>
+                    <ul>
+                        <li>Lee cuidadosamente el texto completo.</li>
+                        <li>Selecciona el artículo apropiado en cada espacio en blanco.</li>
+                        <li>Al terminar, haz clic en el botón "Revisar" para verificar tus respuestas.</li>
+                    </ul>
+                </div>
+
+                <div class="exercise-content" data-exercise="1">
+                    <h4>El viaje de Pedro</h4>
+                    <div class="fill-in-blanks">
+                        <div class="exercise-text">
+                            <select class="article-select" data-correct="El"><option value="" disabled selected></option><option>El</option><option>La</option><option>Los</option><option>Las</option><option>Un</option><option>Una</option></select> joven Pedro decidió hacer 
+                            <select class="article-select" data-correct="un"><option value="" disabled selected></option><option>el</option><option>la</option><option>los</option><option>las</option><option>un</option><option>una</option></select> viaje por 
+                            <select class="article-select" data-correct="la"><option value="" disabled selected></option><option>el</option><option>la</option><option>los</option><option>las</option><option>un</option><option>una</option></select> montaña. Llevaba en su mochila 
+                            <select class="article-select" data-correct="una"><option value="" disabled selected></option><option>el</option><option>la</option><option>los</option><option>las</option><option>un</option><option>una</option></select> brújula y 
+                            <select class="article-select" data-correct="un"><option value="" disabled selected></option><option>el</option><option>la</option><option>los</option><option>las</option><option>un</option><option>una</option></select> mapa antiguo.
+                        </div>
+                        
+                        <div class="exercise-text">
+                            Durante su caminata, encontró 
+                            <select class="article-select" data-correct="una"><option value="" disabled selected></option><option>el</option><option>la</option><option>los</option><option>las</option><option>un</option><option>una</option></select> pequeña cabaña abandonada. Dentro había 
+                            <select class="article-select" data-correct="unos"><option value="" disabled selected></option><option>el</option><option>la</option><option>los</option><option>las</option><option>unos</option><option>unas</option></select> libros viejos y 
+                            <select class="article-select" data-correct="unas"><option value="" disabled selected></option><option>el</option><option>la</option><option>los</option><option>las</option><option>unos</option><option>unas</option></select> fotografías antiguas.
+                        </div>
+                    </div>
+
+                    <div class="exercise-buttons">
+                        <button class="btn-revisar">Revisar</button>
+                        <button class="btn-reiniciar">Empezar de nuevo</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer-comp></footer-comp>
+</body>
+</html>

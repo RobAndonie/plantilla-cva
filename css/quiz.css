@@ -175,3 +175,7 @@
     color: #333;
     margin-bottom: 1rem;
 }
+
+button.confettibu :hover {
+    filter: brightness(85%);
+}

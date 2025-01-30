@@ -131,18 +131,105 @@ function submitQuiz() {
     document.getElementById('score').textContent = score;
     
     const scoreMessage = document.getElementById('scoreMessage');
-    if (score === 7) {
-        scoreMessage.textContent = '¡Excelente! Tienes un entendimiento completo del tema.';
-    } else if (score >= 5) {
-        scoreMessage.textContent = '¡Muy buen trabajo! Has demostrado un buen conocimiento del tema.';
-    } else if (score >= 3) {
-        scoreMessage.textContent = 'Buen intento. Hay algunas áreas que podrías revisar para entender mejor el tema.';
-    } else {
-        scoreMessage.textContent = 'Este quiz te ayudará a aprender más sobre el cambio climático. ¡Revisa las respuestas correctas!';
-    }
     
+    if (score === 7) {
+        scoreMessage.innerHTML = `
+        <img src="../../images/happy.png" alt="iconhappy" , class="center-image" width="auto"
+        height="150px" />
+        <p>¡Excelente! Tienes un entendimiento completo del tema.</p>
+        <div class="surprise">
+        <button class="confettibu">Celebra</button>
+        </div>
+        `;
+        document.getElementsByClassName("confettibu")[0].addEventListener("click", () => {
+            const duration = 15 * 1000, 
+            animationEnd = Date.now() + duration,
+            defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+        
+            function randomInRange(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+        
+            const interval = setInterval(function() {
+                const timeLeft = animationEnd - Date.now();
+        
+                if (timeLeft <= 0) {
+                    return clearInterval(interval);  
+                }
+        
+                const particleCount = 50 * (timeLeft / duration);
+                confetti(
+                    Object.assign({}, defaults, {
+                        particleCount,
+                        origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+                    })
+                );
+
+                confetti(
+                    Object.assign({}, defaults, {
+                        particleCount,
+                        origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+                    })
+                );
+            }, 250);
+           });
+
+    } else if (score >= 5) {
+        scoreMessage.innerHTML = `
+        <img src="../../images/happy.png" alt="iconhappy" , class="center-image" width="auto"
+        height="150px" />
+            <p>¡Muy buen trabajo! Has demostrado un buen conocimiento del tema.</p>
+            <button class="confettibu">Celebra</button>
+        </div>
+        `;
+        document.getElementsByClassName("confettibu")[0].addEventListener("click", () => {
+            const duration = 15 * 1000, 
+            animationEnd = Date.now() + duration,
+            defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+        
+            function randomInRange(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+        
+            const interval = setInterval(function() {
+                const timeLeft = animationEnd - Date.now();
+        
+                if (timeLeft <= 0) {
+                    return clearInterval(interval);  
+                }
+        
+                const particleCount = 50 * (timeLeft / duration);
+                confetti(
+                    Object.assign({}, defaults, {
+                        particleCount,
+                        origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+                    })
+                );
+
+                confetti(
+                    Object.assign({}, defaults, {
+                        particleCount,
+                        origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+                    })
+                );
+            }, 250);
+           });
+        
+    } else if (score >= 3) {
+        scoreMessage.innerHTML = `
+        <img src="../../images/think.png" alt="iconthink" , class="center-image" width="auto"
+        height="150px" />
+            <p>Buen intento. Hay algunas áreas que podrías revisar para entender mejor el tema así que vuelve a intentarlo.</p>
+        `;
+    } else {
+        scoreMessage.innerHTML = `
+        <img src="../../images/sad.png" alt="iconsad" , class="center-image" width="auto"
+        height="150px" />
+        <p>Este quiz te ayudará a aprender más sobre el cambio climático. ¡Revisa las respuestas correctas y vuelve a intentarlo!</p>
+        ` ;
+    }
     showQuestion(questions.length - 1);
-}
+     } 
 
 function reviewQuiz() {
     showQuestion(1);

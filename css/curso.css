@@ -162,6 +162,14 @@
     margin-right: 5%;
 }
 
+img.center-image{
+    float: right; 
+    width: 25%; 
+    margin-left: 20px;
+    margin-bottom: 2rem;
+    margin-top: -4rem;
+    margin-right: 3%;    
+}
 
 .img_circulo {
     display: flex;
@@ -297,3 +305,5 @@ h4 {
         'GRAD' 0,
         'opsz' 24
 }
+
+

@@ -134,7 +134,7 @@ function submitQuiz() {
     
     if (score === 7) {
         scoreMessage.innerHTML = `
-        <img src="../../images/happy.png" alt="iconhappy" , class="center-image" width="auto"
+        <img src="../../images/happy.png" alt="iconhappy" class="center-image" 
         height="150px" />
         <p>¡Excelente! Tienes un entendimiento completo del tema.</p>
         <div class="surprise">
@@ -176,9 +176,10 @@ function submitQuiz() {
 
     } else if (score >= 5) {
         scoreMessage.innerHTML = `
-        <img src="../../images/happy.png" alt="iconhappy" , class="center-image" width="auto"
+        <img src="../../images/happy.png" alt="iconhappy" class="center-image"
         height="150px" />
             <p>¡Muy buen trabajo! Has demostrado un buen conocimiento del tema.</p>
+         <div class="surprise">
             <button class="confettibu">Celebra</button>
         </div>
         `;
@@ -217,13 +218,13 @@ function submitQuiz() {
         
     } else if (score >= 3) {
         scoreMessage.innerHTML = `
-        <img src="../../images/think.png" alt="iconthink" , class="center-image" width="auto"
+        <img src="../../images/think.png" alt="iconthink" class="center-image"
         height="150px" />
             <p>Buen intento. Hay algunas áreas que podrías revisar para entender mejor el tema así que vuelve a intentarlo.</p>
         `;
     } else {
         scoreMessage.innerHTML = `
-        <img src="../../images/sad.png" alt="iconsad" , class="center-image" width="auto"
+        <img src="../../images/sad.png" alt="iconsad" class="center-image" 
         height="150px" />
         <p>Este quiz te ayudará a aprender más sobre el cambio climático. ¡Revisa las respuestas correctas y vuelve a intentarlo!</p>
         ` ;

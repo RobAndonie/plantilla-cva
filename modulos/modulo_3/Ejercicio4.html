@@ -21,27 +21,36 @@
 </head>
 <body>
     <nav-bar></nav-bar>
+    
     <div class="container">
         <side-bar></side-bar>
+        
         <main class="content">
-            <section id="modulo1">
-                <div class="exercise-container">
+            <div class="exercise-container">
+                <div class="exercise-header">
+                    <div class="exercise-image">
+                        <img src="../../images/cerebro.jpg" alt="Imagen ejercicio">
+                    </div>
                     <div class="exercise-title">
                         <h2>Ejercicio 4</h2>
                         <h3>Juego de Memoria: Encuentra los pares</h3>
                         <p>Pon a prueba tu memoria y tu conocimiento sobre el tema.  
                             Encuentra las tarjetas que forman una pareja correcta y completa el juego.</p>
                     </div>
-                    <div class="instructions">
-                        <h4>Instrucciones:</h4>
-                        <ul>
-                            <li>Haz clic en una tarjeta para voltearla.</li>
-                            <li>Luego, haz clic en otra tarjeta para intentar encontrar su par correcto.</li>
-                            <li>Si las dos tarjetas coinciden, permanecerán visibles.</li>
-                            <li>Continúa hasta encontrar todas las parejas.</li>
-                            <li>Cuando completes el juego, aparecerá un mensaje de felicitación.</li>
-                        </ul>
-                    </div>
+                </div>
+
+                <div class="instructions">
+                    <h4>Instrucciones:</h4>
+                    <ul>
+                        <li>Haz clic en una tarjeta para voltearla.</li>
+                        <li>Luego, haz clic en otra tarjeta para intentar encontrar su par correcto.</li>
+                        <li>Si las dos tarjetas coinciden, permanecerán visibles.</li>
+                        <li>Continúa hasta encontrar todas las parejas.</li>
+                        <li>Cuando completes el juego, aparecerá un mensaje de felicitación.</li>
+                    </ul>
+                </div>
+
+                <div class="exercise-content">
                     <div class="memory-game">
                         <div class="memory-card" data-card="1">
                             <div class="card-back"></div>
@@ -93,14 +102,15 @@
                         </div>
                     </div>
                 </div>
-                
-            </section>
+            </div>
         </main>
     </div>
+
     <div class="navigation-buttons">
         <a href="../modulo_3/ej3.html" class="button">Atrás</a>
         <a href="../modulo_3/Ejercicio5.html" class="button">Siguiente</a>
     </div>
+
     <footer-comp></footer-comp>
 
     <div class="overlay" id="popupOverlay">

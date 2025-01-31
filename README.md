@@ -64,6 +64,7 @@ Para utilizar esta plantilla, sigue estos pasos:
     <link rel="stylesheet" href="css/curso.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>     <!-- Necesario para icono del navbar -->
     <script src="components/navbar.js" defer></script>
     <script src="components/sidebar.js" defer></script>
     <script src="components/footer.js" defer></script>

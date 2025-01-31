@@ -15,9 +15,9 @@ class NavBar extends HTMLElement {
 
                 <nav class="nav-navbar">
                     <a href="${basePath}index.html">Menú</a>
-                    <a href="#">Objetivos</a>
-                    <a href="#">Metodología</a>
-                    <a href="${basePath}modulos/modulo_0/aprendizaje.html">Políticas de Evaluación</a>
+                    <a href="${basePath}modulos/modulo_0/aprendizaje.html">Objetivos</a>
+                    <a href="${basePath}modulos/modulo_0/metodologia.html">Metodología</a>
+                    <a href="">Políticas de Evaluación</a>
                 </nav>
                 <div class="nav-search">
                     <form id="search-form">

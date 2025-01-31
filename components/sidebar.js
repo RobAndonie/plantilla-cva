@@ -64,7 +64,7 @@ class SideBar extends HTMLElement {
                         <ul class="sidebar-module-lessons">
                             <li><a href="../modulo_3/ejercicio1.html">Ejercicio 1: Los artículos</a></li>
                             <li><a href="../modulo_3/ejercicio2.html">Lección 2: Relaciona conceptos</a></li>
-                            <li><a href="../modulo_3/ej3.html">Ejercicio 3: Relaciona imágen con concepto</a></li>
+                            <li><a href="../modulo_3/ej3.html">Ejercicio 3: Relaciona imagen con concepto</a></li>
                         </ul>
                     </li>
                 </ul>

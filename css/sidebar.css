@@ -15,9 +15,9 @@
 
     display: block;
     z-index: 1000;
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    position: fixed;
+    top: 120px;
+    left: 20px;
 
     cursor: pointer;
 }
@@ -29,15 +29,17 @@
 .sidebar {
     background: var(--dark-color);
     color: white;
-    width: 250px;
+    width: 288px;
     height: 100vh;
 
-    padding: 20px;
     position: fixed;
     left: 0;
-    top: 100px;
+    top: 88px;
     overflow-y: auto;
     transition: transform 0.3s ease-in-out;
+
+    padding: 20px;
+    padding-top: 96px;
 
     display: flex;
     flex-direction: column;
@@ -115,7 +117,7 @@
 
 .sidebar-module-lessons a {
     text-decoration: none;
-    color: var(--dark-color);
+    color: var(--lighter-color);
 }
 
 .sidebar-module-lessons a:hover {

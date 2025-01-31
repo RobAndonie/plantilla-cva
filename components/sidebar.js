@@ -96,18 +96,6 @@ class SideBar extends HTMLElement {
     toggleButton.addEventListener("click", () => {
       sidebar.classList.toggle("active");
     });
-
-    // Ensure sidebar is always visible on desktop
-    const mediaQuery = window.matchMedia("(min-width: 769px)");
-    const handleMediaChange = (e) => {
-      if (e.matches) {
-        sidebar.classList.add("active");
-      } else {
-        sidebar.classList.remove("active");
-      }
-    };
-    mediaQuery.addListener(handleMediaChange);
-    handleMediaChange(mediaQuery);
   }
 }
 

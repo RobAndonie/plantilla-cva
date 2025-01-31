@@ -1,85 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantilla de Curso</title>
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../css/navbar.css" />
+    <link rel="stylesheet" href="../../css/curso.css" />
+    <link rel="stylesheet" href="../../css/sidebar.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../css/navigationbuttons.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script src="../../components/mobilenavbar.js" defer></script>
+    <script src="../../components/mobil.js" defer></script>
+    <script src="../../components/sidebar.js" defer></script>
+    <script src="../../components/navbar.js" defer></script>
+    <script src="../../components/footer.js" defer></script>
+  </head>
+  <body>
+    <mobile-nav></mobile-nav>
+    <nav-bar></nav-bar>
+    <div class="container">
+      <side-bar></side-bar>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Plantilla de Curso</title>
-  <link rel="stylesheet" href="../../css/styles.css" />
-  <link rel="stylesheet" href="../../css/navbar.css" />
-  <link rel="stylesheet" href="../../css/curso.css" />
-  <link rel="stylesheet" href="../../css/sidebar.css" />
-  <link rel="stylesheet" href="../../css/footer.css" />
-  <link rel="stylesheet" href="../../css/navigationbuttons.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-  <script src="../../components/navbar.js" defer></script>
-  <script src="../../components/sidebar.js" defer></script>
-  <script src="../../components/footer.js" defer></script>
-</head>
-
-<body>
-  <nav-bar></nav-bar>
-  <div class="container">
-  <side-bar></side-bar> 
-
-    <!-- Contenido principal -->
-    <main class="content">
-      <section id="modulo1">
-
-        <img src="../../images/plant.png" alt="Cambio Climatico" , class="center-image" width="auto"
-          height="450px" />
-        <h2>¿Quién es responsable del cambio climático?</h2>
-        <p>
-          <strong>
-            El cambio climático es una gran fuente de desigualdad y un problema de justicia porque existen discrepancias
-            entre quienes han causado el problema y quienes, en mayor medida, sufrirán sus impactos. Esto es cierto
-            tanto dentro como entre países.
-          </strong>
-        </p>
-        <p>
-          Por ejemplo, los países en desarrollo han contribuido muy poco a las emisiones de gases de efecto invernadero
-          en el pasado, pero están sufriendo los impactos más graves. El cambio climático también es un problema de
-          justicia debido a una división generacional: las generaciones futuras, que apenas han contribuido al problema,
-          experimentarán las consecuencias de las acciones de generaciones anteriores (¡que es posible que ni siquiera
-          estén vivas!).
-        </p>
-        <p>
-          Esto es muy injusto, pero la buena noticia es que ya tenemos personas fantásticas como tú que están
-          descubriendo cómo marcar la diferencia. ¡Hay muchas cosas que puedes hacer! Exploraremos esto con más detalle
-          más adelante en el curso.
-        </p>
-        <p>
-          Presiona play en el mapa interactivo a continuación para descubrir cómo han aumentado las emisiones de dióxido
-          de carbono a nivel mundial desde el año 1800.
-        </p>
-        <p>
-          Ten en cuenta que puedes pasar el cursor sobre cualquier país para ver los datos específicos de ese país y si
-          las emisiones per cápita son estables, aumentan o disminuyen con el tiempo. También puedes pasar el cursor
-          sobre los colores dentro del índice para ver qué países están en cada “intervalo” de emisiones.
-        </p>
-        <p>
-          Las emisiones per cápita de dióxido de carbono son las emisiones totales liberadas por cada país divididas
-          entre el número de personas que viven en el país en un año determinado. Este gráfico muestra que, a finales
-          del siglo XVIII, cuando comenzó la Revolución Industrial, las emisiones provenían principalmente del Reino
-          Unido.
-        </p>
-        <p>
-          Sin embargo, a principios del siglo XIX, las noticias sobre las “nuevas tecnologías”, como el carbón usado
-          para generación energía y calefacción, se habían difundido y las emisiones en América del Norte y Europa
-          comenzaron a aumentar. A finales del siglo XIX, Australia y algunos países asiáticos también comenzaron a
-          producir emisiones más altas. A principios del siglo XX, las emisiones comenzaron a aumentar en todos los
-          continentes, pero todavía estaban concentradas en un número selecto de países desarrollados e
-          industrializados.
-        </p>
-        <iframe src="https://ourworldindata.org/grapher/co-emissions-per-capita" title="Embedded external tool" height="460px" frameborder="0" ></iframe>
-        <div class="navigation-buttons">
-        <a href="../modulo_1/leccion1_14.html" class="button">Back</a>
-        <a href="../modulo_1/leccion1_16.html" class="button">Next</a>
-        </div>
-      </section>
-    </main>
-  </div>
-  <footer-comp></footer-comp>
-</body>
-
+      <!-- Contenido principal -->
+      <main class="content">
+        <section id="modulo1">
+          <img
+            src="../../images/plant.png"
+            alt="Cambio Climatico"
+            ,
+            class="center-image"
+            width="auto"
+            height="450px"
+          />
+          <h2>¿Quién es responsable del cambio climático?</h2>
+          <p>
+            <strong>
+              El cambio climático es una gran fuente de desigualdad y un
+              problema de justicia porque existen discrepancias entre quienes
+              han causado el problema y quienes, en mayor medida, sufrirán sus
+              impactos. Esto es cierto tanto dentro como entre países.
+            </strong>
+          </p>
+          <p>
+            Por ejemplo, los países en desarrollo han contribuido muy poco a las
+            emisiones de gases de efecto invernadero en el pasado, pero están
+            sufriendo los impactos más graves. El cambio climático también es un
+            problema de justicia debido a una división generacional: las
+            generaciones futuras, que apenas han contribuido al problema,
+            experimentarán las consecuencias de las acciones de generaciones
+            anteriores (¡que es posible que ni siquiera estén vivas!).
+          </p>
+          <p>
+            Esto es muy injusto, pero la buena noticia es que ya tenemos
+            personas fantásticas como tú que están descubriendo cómo marcar la
+            diferencia. ¡Hay muchas cosas que puedes hacer! Exploraremos esto
+            con más detalle más adelante en el curso.
+          </p>
+          <p>
+            Presiona play en el mapa interactivo a continuación para descubrir
+            cómo han aumentado las emisiones de dióxido de carbono a nivel
+            mundial desde el año 1800.
+          </p>
+          <p>
+            Ten en cuenta que puedes pasar el cursor sobre cualquier país para
+            ver los datos específicos de ese país y si las emisiones per cápita
+            son estables, aumentan o disminuyen con el tiempo. También puedes
+            pasar el cursor sobre los colores dentro del índice para ver qué
+            países están en cada “intervalo” de emisiones.
+          </p>
+          <p>
+            Las emisiones per cápita de dióxido de carbono son las emisiones
+            totales liberadas por cada país divididas entre el número de
+            personas que viven en el país en un año determinado. Este gráfico
+            muestra que, a finales del siglo XVIII, cuando comenzó la Revolución
+            Industrial, las emisiones provenían principalmente del Reino Unido.
+          </p>
+          <p>
+            Sin embargo, a principios del siglo XIX, las noticias sobre las
+            “nuevas tecnologías”, como el carbón usado para generación energía y
+            calefacción, se habían difundido y las emisiones en América del
+            Norte y Europa comenzaron a aumentar. A finales del siglo XIX,
+            Australia y algunos países asiáticos también comenzaron a producir
+            emisiones más altas. A principios del siglo XX, las emisiones
+            comenzaron a aumentar en todos los continentes, pero todavía estaban
+            concentradas en un número selecto de países desarrollados e
+            industrializados.
+          </p>
+          <iframe
+            src="https://ourworldindata.org/grapher/co-emissions-per-capita"
+            title="Embedded external tool"
+            height="460px"
+            frameborder="0"
+          ></iframe>
+          <div class="navigation-buttons">
+            <a href="../modulo_1/leccion1_14.html" class="button">Back</a>
+            <a href="../modulo_1/leccion1_16.html" class="button">Next</a>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer-comp></footer-comp>
+  </body>
 </html>

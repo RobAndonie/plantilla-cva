@@ -192,6 +192,15 @@ img.imgconta{
 
 }
 
+img.imgemoji{
+       float: right;
+        width: 18%;
+        margin-left: 16px;
+        margin-bottom: -3rem;
+        margin-top: -6rem;
+        margin-right: 6%;
+
+}
 
 .img_circulo {
     display: flex;
@@ -201,6 +210,7 @@ img.imgconta{
     height: auto; 
     margin-left: -8rem;
 }
+
 
 .content ol {
     list-style: decimal;

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../css/curso.css" />
+    <link rel="stylesheet" href="../../css/navbar.css" />
+    <link rel="stylesheet" href="../../css/sidebar.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../css/navigationbuttons.css" />
+    <link rel="stylesheet" href="../../css/grid.css" />
+    <link rel="stylesheet" href="../../css/ejercicio2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="../../components/navbar.js" defer></script>
+    <script src="../../components/sidebar.js" defer></script>
+    <script src="../../components/footer.js" defer></script>
+    <script src="../../js/ejercicio2.js" defer></script>
+</head>
+<body>
+    <nav-bar></nav-bar>
+    <div class="container">
+        <side-bar></side-bar>
+        <main class="content">
+            <div class="exercise-container">
+                <div class="exercise-header">
+                    <div class="exercise-image">
+                        <img src="../../images/relacionar.jpg" alt="Imagen ejercicio">
+                    </div>
+                    <div class="exercise-title">
+                        <h2>Ejercicio 2</h2>
+                        <h3>Relaciona los conceptos</h3>
+                        <p>Arrastra los conceptos de la columna izquierda hacia su definición correcta en la columna derecha.</p>
+                    </div>
+                </div>
+
+                <div class="instructions">
+                    <h4>Instrucciones:</h4>
+                    <ul>
+                        <li>Lee cuidadosamente cada concepto y definición.</li>
+                        <li>Arrastra cada concepto hacia el cuadro correspondiente en la columna derecha.</li>
+                        <li>Al terminar, haz clic en el botón "Revisar" para verificar tus respuestas.</li>
+                    </ul>
+                </div>
+
+                <div class="exercise-content">
+                    <div class="matching-container">
+                        <div class="concepts-column">
+                            <div class="concept" draggable="true" data-pair="1">Impacto Ambiental</div>
+                            <div class="concept" draggable="true" data-pair="2">Energía Renovable</div>
+                            <div class="concept" draggable="true" data-pair="3">Sostenibilidad</div>
+                            <div class="concept" draggable="true" data-pair="4">Huella de Carbono</div>
+                        </div>
+
+                        <div class="definitions-column">
+                            <div class="definition-box" data-pair="1">
+                                <div class="dropzone">Efecto que produce la actividad humana sobre el medio ambiente</div>
+                            </div>
+                            <div class="definition-box" data-pair="2">
+                                <div class="dropzone">Energía que se obtiene de fuentes naturales virtualmente inagotables</div>
+                            </div>
+                            <div class="definition-box" data-pair="3">
+                                <div class="dropzone">Satisfacer necesidades presentes sin comprometer las futuras</div>
+                            </div>
+                            <div class="definition-box" data-pair="4">
+                                <div class="dropzone">Totalidad de gases de efecto invernadero emitidos por efecto directo o indirecto</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exercise-buttons">
+                        <button class="btn-revisar">Revisar</button>
+                        <button class="btn-reiniciar">Empezar de nuevo</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer-comp></footer-comp>
+</body>
+</html>

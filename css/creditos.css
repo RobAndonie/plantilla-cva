@@ -1,0 +1,59 @@
+.img-container {
+    display: flex;
+    width: 45%;
+    position: sticky;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img-container img {
+    width: 490px;
+    height: auto;
+}
+
+.creditos-content {
+    width: 80%;
+    overflow-y: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.creditos-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.creditos-content h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.creditos-content h3 {
+    font-size: 1.2rem;
+    margin: 0 5%;
+    text-align: left;
+}
+
+.creditos-content p {
+    font-size: 1.2rem;
+    margin: 1rem 5%;
+}
+
+.creditos-content ul {
+    margin-left: 5%;
+    margin-right: 5%;
+    box-sizing: inherit;
+    list-style-position: inside;
+}
+
+.creditos-content li {
+    display: list-item;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}

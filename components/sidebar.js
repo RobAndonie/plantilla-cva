@@ -66,6 +66,7 @@ class SideBar extends HTMLElement {
                       </li>
                   </ul>
               </div>
+
             </div>
             `;
 

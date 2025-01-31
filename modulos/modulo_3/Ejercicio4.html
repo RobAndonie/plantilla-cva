@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/curso.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/navigationbuttons.css">
+    <link rel="stylesheet" href="../../css/popup.css">
+    <link rel="stylesheet" href="../../css/ejercicio4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <script src="../../components/navbar.js" defer></script>
+    <script src="../../components/sidebar.js" defer></script>
+    <script src="../../components/footer.js" defer></script>
+    <script src="../../js/popup.js" defer></script>
+    <script src="../../js/ejercicio4.js" defer></script>
+</head>
+<body>
+    <nav-bar></nav-bar>
+    <div class="container">
+        <side-bar></side-bar>
+        <main class="content">
+            <section id="modulo1">
+                <div class="exercise-container">
+                    <div class="exercise-title">
+                        <h2>Ejercicio 4</h2>
+                        <h3>Juego de Memoria: Encuentra los pares</h3>
+                        <p>Pon a prueba tu memoria y tu conocimiento sobre el tema.  
+                            Encuentra las tarjetas que forman una pareja correcta y completa el juego.</p>
+                    </div>
+                    <div class="instructions">
+                        <h4>Instrucciones:</h4>
+                        <ul>
+                            <li>Haz clic en una tarjeta para voltearla.</li>
+                            <li>Luego, haz clic en otra tarjeta para intentar encontrar su par correcto.</li>
+                            <li>Si las dos tarjetas coinciden, permanecerán visibles.</li>
+                            <li>Continúa hasta encontrar todas las parejas.</li>
+                            <li>Cuando completes el juego, aparecerá un mensaje de felicitación.</li>
+                        </ul>
+                    </div>
+                    <div class="memory-game">
+                        <div class="memory-card" data-card="1">
+                            <div class="card-back"></div>
+                            <div class="card-front">
+                                <img src="../../images/memory1real.png" alt="Memory 1">
+                            </div>
+                        </div>
+                        <div class="memory-card" data-card="1">
+                            <div class="card-back"></div>
+                            <div class="card-front">
+                                <img src="../../images/memory1concept.png" alt="Memory 1 Concept">
+                            </div>
+                        </div>
+                        <div class="memory-card" data-card="2">
+                            <div class="card-back"></div>
+                            <div class="card-front">
+                                <img src="../../images/memory2real.png" alt="Memory 2">
+                            </div>
+                        </div>
+                        <div class="memory-card" data-card="2">
+                            <div class="card-back"></div>
+                            <div class="card-front">
+                                <img src="../../images/memory2concept.png" alt="Memory 2 Concept">
+                            </div>
+                        </div>
+                        <div class="memory-card" data-card="3">
+                            <div class="card-back"></div>
+                            <div class="card-front">
+                                <img src="../../images/memory3real.png" alt="Memory 3">
+                            </div>
+                        </div>
+                        <div class="memory-card" data-card="3">
+                            <div class="card-back"></div>
+                            <div class="card-front">
+                                <img src="../../images/memory3concept.png" alt="Memory 3 Concept">
+                            </div>
+                        </div>
+                        <div class="memory-card" data-card="4">
+                            <div class="card-back"></div>
+                            <div class="card-front">
+                                <img src="../../images/memory4real.png" alt="Memory 4">
+                            </div>
+                        </div>
+                        <div class="memory-card" data-card="4">
+                            <div class="card-back"></div>
+                            <div class="card-front">
+                                <img src="../../images/memory4concept.png" alt="Memory 4 Concept">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+    </div>
+    <div class="navigation-buttons">
+        <a href="../modulo_3/ej3.html" class="button">Atrás</a>
+        <a href="../modulo_3/Ejercicio5.html" class="button">Siguiente</a>
+    </div>
+    <footer-comp></footer-comp>
+
+    <div class="overlay" id="popupOverlay">
+        <div class="popup">
+            <div class="curved-text-wrapper">
+                <svg viewBox="0 0 500 200" class="curved-text">
+                    <defs>
+                        <path id="curvePath" d="M50,150 Q250,20 450,150" />
+                    </defs>
+                    <text>
+                        <textPath href="#curvePath" startOffset="50%" text-anchor="middle">
+                            ¡Es hora de probar tu conocimiento!
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+            <img src="../../images/teus.png" alt="Mascota" class="heart-beat" />
+            <button id="closePopup">¡Estoy listo!</button>
+        </div>
+    </div>
+</body>
+</html>

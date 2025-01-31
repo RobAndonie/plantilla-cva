@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plantilla de Curso</title>
+    <title>Soluciones climáticas</title>
     <link rel="stylesheet" href="../../css/quiz.css" />
     <link rel="stylesheet" href="../../css/styles.css" />
     <link rel="stylesheet" href="../../css/curso.css" />
@@ -22,136 +23,217 @@
   <body>
     <mobile-nav></mobile-nav>
     <nav-bar></nav-bar>
+
     <div class="container">
-      <side-bar></side-bar>
-      <!-- Contenido principal -->
-      <main class="content">
-        <section id="modulo1">
-          <!-- Quiz -->
-          <div class="quiz-container">
-            <h1>Cuestionario de inicio</h1>
+        <side-bar></side-bar>
+        <main class="content">
+            <section id="modulo1">
+                <div class="quiz-container">
+                    <h1>Cuestionario de Cambio Climático</h1>
 
-            <div class="progress-bar">
-              <div class="progress-step active"></div>
-              <div class="progress-line"></div>
-              <div class="progress-step">1</div>
-              <div class="progress-line"></div>
-              <div class="progress-step">2</div>
-              <div class="progress-line"></div>
-              <div class="progress-step">3</div>
-            </div>
+                    <div class="progress-bar">
+                        <div class="progress-step active"> </div>
+                        <div class="progress-line"></div>
+                        <div class="progress-step">1</div>
+                        <div class="progress-line"></div>
+                        <div class="progress-step">2</div>
+                        <div class="progress-line"></div>
+                        <div class="progress-step">3</div>
+                        <div class="progress-line"></div>
+                        <div class="progress-step">4</div>
+                        <div class="progress-line"></div>
+                        <div class="progress-step">5</div>
+                        <div class="progress-line"></div>
+                        <div class="progress-step">6</div>
+                        <div class="progress-line"></div>
+                        <div class="progress-step">7</div>
+                    </div>
 
-            <div class="question active" id="intro">
-              <div class="intro-content">
-                Antes de sumergirnos en la semana 1, empecemos con una breve
-                prueba de preparación (tres preguntas) para ver lo que ya sabes
-                sobre el cambio climático. No te preocupes si esto es nuevo para
-                ti, la prueba es solo para que comiences a pensar en el cambio
-                climático.
-              </div>
-              <div class="navigation">
-                <div></div>
-                <button class="btn-next" onclick="nextQuestion()">
-                  Begin quiz
-                </button>
-              </div>
-            </div>
+                    <div class="question active" id="intro">
+                        <div class="intro-content">
+                            Empecemos con una evaluación sobre los conceptos clave del cambio climático que hemos revisado. 
+                            Este cuestionario nos ayudará a reforzar los puntos más importantes sobre la justicia climática, 
+                            los impactos globales y las razones para actuar.
+                        </div>
+                        <div class="navigation">
+                            <div></div>
+                            <button class="btn-next" onclick="SiguienteQuestion()">Comenzar quiz</button>
+                        </div>
+                    </div>
 
-            <div class="question" id="q1">
-              <div class="question-title">
-                ¿Cuál de las siguientes afirmaciones describe mejor cómo los
-                humanos están calentando el planeta?
-              </div>
-              <div class="options">
-                <div class="option">
-                  <input type="radio" name="q1" id="q1a" value="a" />
-                  <label for="q1a"
-                    >El dióxido de carbono es un gas cálido y, a medida que se
-                    libera más de él, el planeta se calienta.</label
-                  >
-                </div>
-                <div class="option">
-                  <input type="radio" name="q1" id="q1b" value="b" />
-                  <label for="q1b"
-                    >Al aumentar el efecto invernadero, las emisiones de gases
-                    como el dióxido de carbono atrapan calor adicional en la
-                    atmósfera.</label
-                  >
-                </div>
-                <div class="option">
-                  <input type="radio" name="q1" id="q1c" value="c" />
-                  <label for="q1c"
-                    >El cambio climático es un proceso natural y no se ve
-                    afectado por la actividad humana.</label
-                  >
-                </div>
-              </div>
-              <div class="feedback"></div>
-              <div class="navigation">
-                <button class="btn-prev" onclick="prevQuestion()">
-                  Anterior
-                </button>
-                <button class="btn-next" onclick="nextQuestion()">
-                  Siguiente
-                </button>
-              </div>
-            </div>
+                    <div class="question" id="q1">
+                        <div class="question-title">¿Cómo se distribuyen los impactos del cambio climático globalmente?</div>
+                        <div class="options">
+                            <div class="option">
+                                <input type="radio" name="q1" id="q1a" value="a">
+                                <label for="q1a">Los impactos son uniformes en todo el planeta</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q1" id="q1b" value="b">
+                                <label for="q1b">Los gases se distribuyen uniformemente, pero el calentamiento es desigual debido a factores como patrones de viento y geografía</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q1" id="q1c" value="c">
+                                <label for="q1c">Solo afecta a las zonas que producen más emisiones</label>
+                            </div>
+                        </div>
+                        <div class="feedAtrás"></div>
+                        <div class="navigation">
+                            <button class="btn-prev" onclick="prevQuestion()">Anterior</button>
+                            <button class="btn-next" onclick="SiguienteQuestion()">Siguiente</button>
+                        </div>
+                    </div>
 
-            <div class="question" id="q2">
-              <div class="question-title">
-                ¿Cómo afecta el cambio climático diferentes partes del mundo?
-              </div>
-              <div class="options">
-                <div class="option">
-                  <input type="radio" name="q2" id="q2a" value="a" />
-                  <label for="q2a"
-                    >Los impactos del cambio climático son los mismos en todos
-                    lados: mayores temperaturas y más lluvia.</label
-                  >
-                </div>
-                <div class="option">
-                  <input type="radio" name="q2" id="q2b" value="b" />
-                  <label for="q2b"
-                    >El cambio climático afecta de manera diferente a diferentes
-                    partes del mundo. Los polos se están calentando más rápido
-                    que otras partes del mundo.</label
-                  >
-                </div>
-                <div class="option">
-                  <input type="radio" name="q2" id="q2c" value="c" />
-                  <label for="q2c"
-                    >El cambio climático afecta de manera diferente a diferentes
-                    partes del mundo. Los trópicos se están calentando más
-                    rápido que otras partes del mundo.</label
-                  >
-                </div>
-                <div class="option">
-                  <input type="radio" name="q2" id="q2d" value="d" />
-                  <label for="q2d">El mundo se está enfriando.</label>
-                </div>
-              </div>
-              <div class="feedback"></div>
-              <div class="navigation">
-                <button class="btn-prev" onclick="prevQuestion()">
-                  Anterior
-                </button>
-                <button class="btn-next" onclick="nextQuestion()">
-                  Siguiente
-                </button>
-              </div>
-            </div>
+                    <div class="question" id="q2">
+                        <div class="question-title">¿Cuál de los siguientes grupos es más vulnerable a los impactos del cambio climático?</div>
+                        <div class="options">
+                            <div class="option">
+                                <input type="radio" name="q2" id="q2a" value="a">
+                                <label for="q2a">Los países industrializados</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q2" id="q2b" value="b">
+                                <label for="q2b">Todas las comunidades por igual</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q2" id="q2c" value="c">
+                                <label for="q2c">Las mujeres, minorías étnicas y comunidades indígenas</label>
+                            </div>
+                        </div>
+                        <div class="feedAtrás"></div>
+                        <div class="navigation">
+                            <button class="btn-prev" onclick="prevQuestion()">Anterior</button>
+                            <button class="btn-next" onclick="SiguienteQuestion()">Siguiente</button>
+                        </div>
+                    </div>
 
-            <div class="question" id="q3">
-              <div class="question-title">
-                ¿Cuál es el impacto principal del cambio climático en los
-                océanos?
-              </div>
-              <div class="options">
-                <div class="option">
-                  <input type="radio" name="q3" id="q3a" value="a" />
-                  <label for="q3a"
-                    >Aumento del nivel del mar y acidificación</label
-                  >
+                    <div class="question" id="q3">
+                        <div class="question-title">¿Cuál es un impacto directo del cambio climático en la salud humana según el material?</div>
+                        <div class="options">
+                            <div class="option">
+                                <input type="radio" name="q3" id="q3a" value="a">
+                                <label for="q3a">Estrés por calor durante olas de calor</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q3" id="q3b" value="b">
+                                <label for="q3b">Cambios en la economía global</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q3" id="q3c" value="c">
+                                <label for="q3c">Pérdida de biodiversidad</label>
+                            </div>
+                        </div>
+                        <div class="feedAtrás"></div>
+                        <div class="navigation">
+                            <button class="btn-prev" onclick="prevQuestion()">Anterior</button>
+                            <button class="next" onclick="SiguienteQuestion()">Siguiente</button>
+                        </div>
+                    </div>
+
+                    <div class="question" id="q4">
+                        <div class="question-title">Según el material, ¿qué evento climático causó daños estimados en 1.3 mil millones de dólares estadounidenses?</div>
+                        <div class="options">
+                            <div class="option">
+                                <input type="radio" name="q4" id="q4a" value="a">
+                                <label for="q4a">Las inundaciones en India de 2019</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q4" id="q4b" value="b">
+                                <label for="q4b">Los incendios forestales en Australia de 2019</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q4" id="q4c" value="c">
+                                <label for="q4c">Las inundaciones en Egipto de 2021</label>
+                            </div>
+                        </div>
+                        <div class="feedAtrás"></div>
+                        <div class="navigation">
+                            <button class="btn-prev" onclick="prevQuestion()">Anterior</button>
+                            <button class="next" onclick="SiguienteQuestion()">Siguiente</button>
+                        </div>
+                    </div>
+
+                    <div class="question" id="q5">
+                        <div class="question-title">¿Cuál de los siguientes NO es uno de los cuatro imperativos para la acción climática?</div>
+                        <div class="options">
+                            <div class="option">
+                                <input type="radio" name="q5" id="q5a" value="a">
+                                <label for="q5a">Imperativo tecnológico</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q5" id="q5b" value="b">
+                                <label for="q5b">Imperativo personal</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q5" id="q5c" value="c">
+                                <label for="q5c">Imperativo económico</label>
+                            </div>
+                        </div>
+                        <div class="feedAtrás"></div>
+                        <div class="navigation">
+                            <button class="btn-prev" onclick="prevQuestion()">Anterior</button>
+                            <button class="next" onclick="SiguienteQuestion()">Siguiente</button>
+                        </div>
+                    </div>
+
+                    <div class="question" id="q6">
+                        <div class="question-title">Según el material, ¿qué afirmación es correcta sobre las emisiones históricas?</div>
+                        <div class="options">
+                            <div class="option">
+                                <input type="radio" name="q6" id="q6a" value="a">
+                                <label for="q6a">Las emisiones comenzaron uniformemente en todos los países</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q6" id="q6b" value="b">
+                                <label for="q6b">Las emisiones comenzaron en el Reino Unido durante la Revolución Industrial</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q6" id="q6c" value="c">
+                                <label for="q6c">Los países en desarrollo fueron los primeros en generar emisiones significativas</label>
+                            </div>
+                        </div>
+                        <div class="feedAtrás"></div>
+                        <div class="navigation">
+                            <button class="btn-prev" onclick="prevQuestion()">Anterior</button>
+                            <button class="next" onclick="SiguienteQuestion()">Siguiente</button>
+                        </div>
+                    </div>
+
+                    <div class="question" id="q7">
+                        <div class="question-title">¿Qué afirmación sobre la justicia climática es correcta?</div>
+                        <div class="options">
+                            <div class="option">
+                                <input type="radio" name="q7" id="q7a" value="a">
+                                <label for="q7a">Los países que más contaminan son los más afectados</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q7" id="q7b" value="b">
+                                <label for="q7b">Los impactos son proporcionales a las emisiones de cada país</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="q7" id="q7c" value="c">
+                                <label for="q7c">Las personas que menos contribuyen al cambio climático a menudo sufren más sus impactos</label>
+                            </div>
+                        </div>
+                        <div class="feedAtrás"></div>
+                        <div class="navigation">
+                            <button class="btn-prev" onclick="prevQuestion()">Anterior</button>
+                            <button class="next" onclick="submitQuiz()">Enviar</button>
+                        </div>
+                    </div>
+
+                    <div class="question" id="results">
+                        <div class="results">
+                            <h2>Resultados del quiz</h2>
+                            <div class="score">
+                                <span id="score">0</span>/7 correctas
+                            </div>
+                            <div id="scoreMessage"></div>
+                        </div>
+                        <div class="navigation">
+                            <button class="btn-prev" onclick="reviewQuiz()">Revisar respuestas</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="option">
                   <input type="radio" name="q3" id="q3b" value="b" />
@@ -193,5 +275,11 @@
     </div>
     <footer-comp></footer-comp>
     <script src="../../js/quiz.js" defer></script>
-  </body>
+    <div class="surprise">
+        <button class="confettibu">Celebra</button>
+    </div>
+
+    <script src="../../js/quiz.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.10.8/dist/index.umd.min.js"></script>
+</body>
 </html>

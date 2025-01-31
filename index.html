@@ -5,13 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Overview de curso</title>
-  <link rel="stylesheet" href="../css/styles.css" />
-  <link rel="stylesheet" href="../css/navbar.css" />
-  <link rel="stylesheet" href="../css/footer.css" />
-  <link rel="stylesheet" href="../css/overview.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/overview.css" />
+
 
   <link rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 
 
 
@@ -19,6 +21,7 @@
   <script src="../components/mobilenavbar.js" defer></script>
   <script src="../components/navbar.js" defer></script>
   <script src="../components/footer.js" defer></script>
+
 </head>
 
 <body class="overview">
@@ -43,7 +46,10 @@
 
         <div class="overview-ctas">
           <button class="overview-start-btn">Comenzar</button>
-          <button class="overview-modules-btn">Ver módulos</button>
+          <button class="overview-share-btn" onclick="compartirCurso()">
+            <span class="material-symbols-outlined">share</span>
+            Compartir curso
+          </button>
         </div>
       </div>
     </section>
@@ -70,81 +76,241 @@
   </button>
   <div class="overview-modules-accordion-content">
     <ul>
-      <li>
+    <li>
         <div class="module-section">
-          <div class="lesson-content">
-            <a href="../modulos/modulo_1/leccion1_1.html" class="lesson-link">
-              <span class="material-symbols-outlined">description</span>
-              Sección 1: Empezar
-            </a>
-          </div>
-          <p class="section-description">
-            Conoce al equipo que creó y gestiona este curso y descubre más sobre lo que aprenderás.
-          </p>
+            <div class="lesson-content">
+                <a href="modulos/modulo_1/leccion1_1.html" class="lesson-link">
+                    <span class="material-symbols-outlined">description</span>
+                    Lección 1: Introducción al Curso
+                </a>
+            </div>
+            <p class="section-description">
+                Conoce al equipo que creó y gestiona este curso y descubre más sobre lo que aprenderás.
+            </p>
         </div>
-      </li>
-      <li>
+    </li>
+    <li>
         <div class="module-section">
-          <div class="lesson-content">
-            <span class="material-symbols-outlined">description</span>
-            Sección 2: Introducción
-          </div>
-          <p class="section-description">
-            Introducción general al curso y sus objetivos principales.
-          </p>
+            <div class="lesson-content">
+                <a href="modulos/modulo_1/leccion1_2.html" class="lesson-link">
+                    <span class="material-symbols-outlined">description</span>
+                    Colaboradores
+                </a>
+            </div>
+            <p class="section-description">
+                Conoce a los colaboradores que participan en este curso.
+            </p>
         </div>
-      </li>
-      <li>
+    </li>
+    <li>
         <div class="module-section">
-          <div class="lesson-content">
-            <span class="material-symbols-outlined">description</span>
-            Sección 3: ¿Qué es el cambio climático?
-          </div>
-          <p class="section-description">
-            Comprende los conceptos fundamentales del cambio climático y sus causas principales.
-          </p>
+            <div class="lesson-content">
+                <a href="modulos/modulo_1/leccion1_3.html" class="lesson-link">
+                    <span class="material-symbols-outlined">description</span>
+                    Conoce al equipo
+                </a>
+            </div>
+            <p class="section-description">
+                Descubre quiénes son los miembros del equipo detrás de este curso.
+            </p>
         </div>
-      </li>
-      <li>
+    </li>
+    <li>
         <div class="module-section">
-          <div class="lesson-content">
-            <a href="../modulos/modulo_1/leccion1_10.html" class="lesson-link">
-              <span class="material-symbols-outlined">description</span>
-              Sección 4: Los impactos global del cambio climático
-            </a>
-          </div>
-          <p class="section-description">
-            Explora los efectos del cambio climático a nivel mundial y sus consecuencias.
-          </p>
+            <div class="lesson-content">
+                <a href="modulos/modulo_1/leccion1_4.html" class="lesson-link">
+                    <span class="material-symbols-outlined">description</span>
+                    Presentaciones
+                </a>
+            </div>
+            <p class="section-description">
+                Presentaciones de los temas que se abordarán en el curso.
+            </p>
         </div>
-      </li>
-      <li>
+    </li>
+    <li>
         <div class="module-section">
-          <div class="lesson-content">
-            <a href="../modulos/modulo_1/leccion1_10.html" class="lesson-link">
-              <span class="material-symbols-outlined">description</span>
-              Sección 5: Justicia climática
-            </a>
-          </div>
-          <p class="section-description">
-            Analiza las implicaciones sociales y éticas del cambio climático y sus impactos diferenciados.
-          </p>
+            <div class="lesson-content">
+                <a href="modulos/modulo_1/leccion1_5.html" class="lesson-link">
+                  <span class="material-symbols-outlined"> play_arrow </span>
+                    Lección 5: Bienvenidos a la semana 1
+                </a>
+            </div>
+            <p class="section-description">
+                Introducción a la primera semana del curso.
+            </p>
         </div>
-      </li>
-      <li>
+    </li>
+    <li>
         <div class="module-section">
-          <div class="lesson-content">
-            <a href="../modulos/modulo_1/quiz.html" class="lesson-link">
-              <span class="material-symbols-outlined">quiz</span>
-              Quiz: Evaluación de conocimientos
-            </a>
-          </div>
-          <p class="section-description">
-            Evalúa tu comprensión de los conceptos clave del módulo.
-          </p>
+            <div class="lesson-content">
+                <a href="modulos/modulo_1/leccion1_6.html" class="lesson-link">
+                    <span class="material-symbols-outlined">quiz</span>
+                    Lección 6: Quiz: Cuestionario de inicio
+                </a>
+            </div>
+            <p class="section-description">
+                Evaluación inicial para medir tus conocimientos previos.
+            </p>
         </div>
-      </li>
-    </ul>
+    </li>
+    <li>
+        <div class="module-section">
+            <div class="lesson-content">
+                <a href="modulos/modulo_1/leccion1_7.html" class="lesson-link">
+                    <span class="material-symbols-outlined">description</span>
+                    Lección 7: ¿Qué es el cambio climático?
+                </a>
+            </div>
+            <p class="section-description">
+                Comprende los conceptos fundamentales del cambio climático.
+            </p>
+        </div>
+    </li>
+    <li>
+        <div class="module-section">
+            <div class="lesson-content">
+                <a href="modulos/modulo_1/leccion1_8.html" class="lesson-link">
+                    <span class="material-symbols-outlined">description</span>
+                    Lección 8: ¿Qué dicen los científicos?
+                </a>
+            </div>
+            <p class="section-description">
+                Descubre lo que los científicos tienen que decir sobre el cambio climático.
+            </p>
+        </div>
+    </li>
+    <li>
+        <div class="module-section">
+            <div class="lesson-content">
+                <a href="modulos/modulo_1/leccion1_9.html" class="lesson-link">
+                    <span class="material-symbols-outlined">description</span>
+                    Lección 9: ¿Por qué debe importarnos?
+                </a>
+            </div>
+            <p class="section-description">
+                Entiende la importancia del cambio climático y por qué debería importarnos.
+            </p>
+        </div>
+    </li>
+    <li>
+        <div class="module-section">
+            <div class="lesson-content">
+                <a href="modulos/modulo_1/leccion1_10.html" class="lesson-link">
+                    <span class="material-symbols-outlined">description</span>
+                    Lección 10: Cambio climático global pero distribuido de manera desigual
+                </a>
+            </div>
+            <p class="section-description">
+                Explora cómo el cambio climático afecta de manera desigual a diferentes regiones.
+            </p>
+        </div>
+    </li>
+    <li>
+        <div class="module-section">
+            <div class="lesson-content">
+                <a href="modulos/modulo_1/leccion1_11.html" class="lesson-link">
+                    <span class="material-symbols-outlined">description</span>
+                    Lección 11: Impulsores, cambios e impactos
+                </a>
+            </div>
+            <p class="section-description">
+                Analiza los impulsores del cambio climático y sus impactos.
+            </p>
+        </div>
+    </li>
+    <li>
+        <div class="module-section">
+            <div class="lesson-content">
+                <a href="modulos/modulo_1/leccion1_12.html" class="lesson-link">
+                    <span class="material-symbols-outlined">description</span>
+                    Lección 12: Impactos climáticos en los sistemas naturales
+                </a>
+            </div>
+            <p class="section-description">
+                Descubre cómo el cambio climático afecta a los sistemas naturales.
+            </p>
+        </div>
+    </li>
+    <li>
+        <div class="module-section">
+            <div class="lesson-content">
+                <a href="modulos/modulo_1/leccion1_13.html" class="lesson-link">
+                    <span class="material-symbols-outlined">description</span>
+                    Lección 13: Impactos climáticos en sistemas humanos
+                </a>
+            </div>
+            <p class="section-description">
+                Analiza los impactos del cambio climático en los sistemas humanos.
+            </p>
+        </div>
+    </li>
+    <li>
+        <div class="module-section">
+            <div class="lesson-content">
+                <a href="modulos/modulo_1/leccion1_14.html" class="lesson-link">
+                    <span class="material-symbols-outlined">description</span>
+                    Lección 14: ¿A quién afecta el cambio climático?
+                </a>
+            </div>
+            <p class="section-description">
+                Entiende quiénes son los más afectados por el cambio climático.
+            </p>
+        </div>
+    </li>
+    <li>
+        <div class="module-section">
+            <div class="lesson-content">
+                <a href="modulos/modulo_1/leccion1_15.html" class="lesson-link">
+                    <span class="material-symbols-outlined">description</span>
+                    Lección 15: ¿Quién es responsable del cambio climático?
+                </a>
+            </div>
+            <p class="section-description">
+                Analiza la responsabilidad del cambio climático.
+            </p>
+        </div>
+    </li>
+    <li>
+        <div class="module-section">
+            <div class="lesson-content">
+                <a href="modulos/modulo_1/leccion1_16.html" class="lesson-link">
+                    <span class="material-symbols-outlined">description</span>
+                    Lección 16: Explicación de la justicia climática
+                </a>
+            </div>
+            <p class="section-description">
+                Comprende el concepto de justicia climática.
+            </p>
+        </div>
+    </li>
+    <li>
+        <div class="module-section">
+            <div class="lesson-content">
+                <a href="modulos/modulo_1/leccion1_17.html" class="lesson-link">
+                    <span class="material-symbols-outlined">description</span>
+                    Lección 17: Cuatro imperativos para la acción
+                </a>
+            </div>
+            <p class="section-description">
+                Descubre los cuatro imperativos para la acción climática.
+            </p>
+        </div>
+    </li>
+    <li>
+        <div class="module-section">
+            <div class="lesson-content">
+                <a href="modulos/modulo_1/quiz.html" class="lesson-link">
+                    <span class="material-symbols-outlined">quiz</span>
+                    Quiz: ¿Qué has aprendido?
+                </a>
+            </div>
+            <p class="section-description">
+                Evalúa tu comprensión de los conceptos clave del módulo.
+            </p>
+        </div>
+    </li>
+</ul>
   </div>
 </div>
 
@@ -208,62 +374,6 @@
           </div>
         </div>
 
-        <div class="overview-modules-accordion-item">
-          <button class="overview-modules-accordion-header" data-content="Módulo 4: Gestión del riesgo climático">
-            <h3>Módulo 4: Gestión del riesgo climático</h3>
-          </button>
-          <div class="overview-modules-accordion-content">
-            <ul>
-              <li>
-                <span class="material-symbols-outlined"> play_arrow </span>
-                Lección 3.1: Diseño del proyecto
-              </li>
-              <li>
-                <span class="material-symbols-outlined"> play_arrow </span>
-                Lección 3.2: Desarrollo
-              </li>
-              <li>
-                <span class="material-symbols-outlined"> play_arrow </span>
-                Lección 3.3: Testing
-              </li>
-              <li>
-                <span class="material-symbols-outlined"> play_arrow </span>
-                Lección 3.4: Deploy
-              </li>
-              <li>
-                <span class="material-symbols-outlined"> description </span>
-                Lección 3.5: Resumen del curso
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="overview-modules-accordion-item">
-          <button class="overview-modules-accordion-header" data-content="Módulo 5: Soluciones climáticas globales">
-            <h3>Módulo 5: Soluciones climáticas globales</h3>
-          </button>
-          <div class="overview-modules-accordion-content">
-            <ul>
-              <li>
-                <span class="material-symbols-outlined"> play_arrow </span>
-                Lección 3.1: Diseño del proyecto
-              </li>
-              <li>
-                <span class="material-symbols-outlined"> play_arrow </span>
-                Lección 3.2: Desarrollo
-              </li>
-              <li>
-                <span class="material-symbols-outlined"> play_arrow </span>
-                Lección 3.3: Testing
-              </li>
-              <li>
-                <span class="material-symbols-outlined"> play_arrow </span>
-                Lección 3.4: Deploy
-              </li>
-              <li>
-                <span class="material-symbols-outlined"> description </span>
-                Lección 3.5: Resumen del curso
-              </li>
             </ul>
           </div>
         </div>

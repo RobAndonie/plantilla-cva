@@ -3,26 +3,44 @@ const questions = document.querySelectorAll('.question');
 const progressSteps = document.querySelectorAll('.progress-step');
 const progressLines = document.querySelectorAll('.progress-line');
 
-// Definir las respuestas correctas
 const correctAnswers = {
     'q1': 'b',
-    'q2': 'b',
-    'q3': 'a'
+    'q2': 'c',
+    'q3': 'a',
+    'q4': 'b',
+    'q5': 'a',
+    'q6': 'b',
+    'q7': 'c'
 };
 
-// Definir retroalimentación para cada pregunta
 const feedback = {
     'q1': {
-        'correct': 'Correcto! Los gases de efecto invernadero atrapan el calor en la atmósfera.',
-        'incorrect': 'Incorrecto. Los gases de efecto invernadero atrapan el calor en la atmósfera, no son cálidos por sí mismos.'
+        'correct': 'Correcto! El calentamiento es desigual debido a varios factores geográficos y atmosféricos.',
+        'incorrect': 'Incorrecto. Aunque los gases se distribuyen uniformemente, el calentamiento no es uniforme debido a factores como patrones de viento y geografía.'
     },
     'q2': {
-        'correct': 'Correcto! Los polos se están calentando más rápidamente.',
-        'incorrect': 'Incorrecto. El cambio climático afecta diferentes regiones de manera distinta, con un calentamiento más rápido en los polos.'
+        'correct': 'Correcto! Las comunidades marginadas son las más vulnerables a los impactos del cambio climático.',
+        'incorrect': 'Incorrecto. Las mujeres, minorías étnicas y comunidades indígenas son los grupos más vulnerables a los impactos.'
     },
     'q3': {
-        'correct': 'Correcto! El cambio climático causa tanto el aumento del nivel del mar como la acidificación.',
-        'incorrect': 'Incorrecto. Los océanos se ven afectados tanto por el aumento del nivel del mar como por la acidificación.'
+        'correct': 'Correcto! El estrés por calor es un impacto directo que causó 166,000 muertes entre 1998 y 2017.',
+        'incorrect': 'Incorrecto. El estrés por calor durante las olas de calor es un impacto directo documentado en el material.'
+    },
+    'q4': {
+        'correct': 'Correcto! Los incendios forestales en Australia de 2019 causaron daños por 1.3 mil millones de dólares.',
+        'incorrect': 'Incorrecto. Los incendios forestales en Australia de 2019 fueron los que causaron daños por 1.3 mil millones de dólares.'
+    },
+    'q5': {
+        'correct': 'Correcto! El imperativo tecnológico no es uno de los cuatro imperativos mencionados.',
+        'incorrect': 'Incorrecto. Los cuatro imperativos son: personal, moral, legal y económico.'
+    },
+    'q6': {
+        'correct': 'Correcto! Las emisiones comenzaron en el Reino Unido durante la Revolución Industrial.',
+        'incorrect': 'Incorrecto. Las emisiones significativas comenzaron en el Reino Unido durante la Revolución Industrial.'
+    },
+    'q7': {
+        'correct': 'Correcto! Existe una gran desigualdad entre quienes causan el cambio climático y quienes sufren sus impactos.',
+        'incorrect': 'Incorrecto. Las personas que menos contribuyen al cambio climático suelen ser las más afectadas.'
     }
 };
 
@@ -107,35 +125,115 @@ function calculateScore() {
 }
 
 function submitQuiz() {
-    // Verificar la última pregunta antes de mostrar resultados
-    checkAnswer('q3');
+    checkAnswer('q7');
     
-    // Calcular puntuación
     const score = calculateScore();
-    
-    // Actualizar el marcador
     document.getElementById('score').textContent = score;
     
-    // Mostrar mensaje según la puntuación
     const scoreMessage = document.getElementById('scoreMessage');
-    if (score === 3) {
-        scoreMessage.textContent = '¡Excelente! Tienes un buen entendimiento del cambio climático.';
-    } else if (score === 2) {
-        scoreMessage.textContent = '¡Buen trabajo! Has demostrado conocimiento sobre el cambio climático.';
-    } else if (score === 1) {
-        scoreMessage.textContent = 'Gracias por participar. Hay algunas áreas que podrías revisar para entender mejor el cambio climático.';
-    } else {
-        scoreMessage.textContent = 'Este quiz te ayudará a aprender más sobre el cambio climático. ¡Revisa las respuestas correctas!';
-    }
     
-    // Mostrar la página de resultados
+    if (score === 7) {
+        scoreMessage.innerHTML = `
+        <img src="../../images/happy.png" alt="iconhappy" class="center-image" 
+        height="150px" />
+        <p>¡Excelente! Tienes un entendimiento completo del tema.</p>
+        <div class="surprise">
+        <button class="confettibu">Celebra</button>
+        </div>
+        `;
+        document.getElementsByClassName("confettibu")[0].addEventListener("click", () => {
+            const duration = 15 * 1000, 
+            animationEnd = Date.now() + duration,
+            defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+        
+            function randomInRange(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+        
+            const interval = setInterval(function() {
+                const timeLeft = animationEnd - Date.now();
+        
+                if (timeLeft <= 0) {
+                    return clearInterval(interval);  
+                }
+        
+                const particleCount = 50 * (timeLeft / duration);
+                confetti(
+                    Object.assign({}, defaults, {
+                        particleCount,
+                        origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+                    })
+                );
+
+                confetti(
+                    Object.assign({}, defaults, {
+                        particleCount,
+                        origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+                    })
+                );
+            }, 250);
+           });
+
+    } else if (score >= 5) {
+        scoreMessage.innerHTML = `
+        <img src="../../images/happy.png" alt="iconhappy" class="center-image"
+        height="150px" />
+            <p>¡Muy buen trabajo! Has demostrado un buen conocimiento del tema.</p>
+         <div class="surprise">
+            <button class="confettibu">Celebra</button>
+        </div>
+        `;
+        document.getElementsByClassName("confettibu")[0].addEventListener("click", () => {
+            const duration = 15 * 1000, 
+            animationEnd = Date.now() + duration,
+            defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+        
+            function randomInRange(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+        
+            const interval = setInterval(function() {
+                const timeLeft = animationEnd - Date.now();
+        
+                if (timeLeft <= 0) {
+                    return clearInterval(interval);  
+                }
+        
+                const particleCount = 50 * (timeLeft / duration);
+                confetti(
+                    Object.assign({}, defaults, {
+                        particleCount,
+                        origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+                    })
+                );
+
+                confetti(
+                    Object.assign({}, defaults, {
+                        particleCount,
+                        origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+                    })
+                );
+            }, 250);
+           });
+        
+    } else if (score >= 3) {
+        scoreMessage.innerHTML = `
+        <img src="../../images/think.png" alt="iconthink" class="center-image"
+        height="150px" />
+            <p>Buen intento. Hay algunas áreas que podrías revisar para entender mejor el tema así que vuelve a intentarlo.</p>
+        `;
+    } else {
+        scoreMessage.innerHTML = `
+        <img src="../../images/sad.png" alt="iconsad" class="center-image" 
+        height="150px" />
+        <p>Este quiz te ayudará a aprender más sobre el cambio climático. ¡Revisa las respuestas correctas y vuelve a intentarlo!</p>
+        ` ;
+    }
     showQuestion(questions.length - 1);
-}
+     } 
 
 function reviewQuiz() {
-    // Volver a la primera pregunta para revisar
     showQuestion(1);
 }
 
-// Inicializar el quiz
 showQuestion(0);

@@ -1,11 +1,54 @@
-.sidebar {
-    width: 18rem;
+/* Sidebar General Styles */
+.sidebar-container {
+    position: relative;
+}
 
-    margin: 0 1rem;
-    padding: 1rem;
+/* Botón para abrir/cerrar sidebar en móvil */
+.sidebar-toggle {
+    background: var(--dark-color);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: none;
+
+    padding: 10px;
+
+    display: block;
+    z-index: 1000;
+    position: fixed;
+    top: 120px;
+    left: 20px;
+
+    cursor: pointer;
+}
+
+.sidebar-toggle:hover {
+    background: var(--primary-color);
+}
+
+.sidebar {
+    background: var(--dark-color);
+    color: white;
+    width: 288px;
+    height: 100vh;
+
+    position: fixed;
+    left: 0;
+    top: 88px;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+
+    padding: 20px;
+    padding-top: 96px;
 
     display: flex;
     flex-direction: column;
+
+    transform: translateX(-100%);
+}
+
+.sidebar.active {
+    transform: translateX(0);
 }
 
 .sidebar-list {
@@ -30,7 +73,7 @@
 
 .sidebar-module-header {
     background: rgb(0, 84, 166, 0.1);
-    height: 5rem;
+    height: auto;
     font-weight: bold;
     border-radius: 8px;
 
@@ -38,8 +81,8 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: left;
+    gap: 1rem;
 
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -74,7 +117,7 @@
 
 .sidebar-module-lessons a {
     text-decoration: none;
-    color: var(--dark-color);
+    color: var(--lighter-color);
 }
 
 .sidebar-module-lessons a:hover {

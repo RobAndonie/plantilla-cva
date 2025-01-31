@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Soluciones climáticas</title>
@@ -10,14 +11,19 @@
     <link rel="stylesheet" href="../../css/navbar.css" />
     <link rel="stylesheet" href="../../css/footer.css" />
     <link rel="stylesheet" href="../../css/sidebar.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-    <script src="../../components/navbar.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script src="../../components/mobilenavbar.js" defer></script>
+    <script src="../../components/mobil.js" defer></script>
     <script src="../../components/sidebar.js" defer></script>
     <script src="../../components/footer.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
+    <mobile-nav></mobile-nav>
     <nav-bar></nav-bar>
+
     <div class="container">
         <side-bar></side-bar>
         <main class="content">
@@ -229,8 +235,43 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
+                <div class="option">
+                  <input type="radio" name="q3" id="q3b" value="b" />
+                  <label for="q3b"
+                    >Solo cambios en la temperatura del agua</label
+                  >
+                </div>
+                <div class="option">
+                  <input type="radio" name="q3" id="q3c" value="c" />
+                  <label for="q3c"
+                    >No hay impacto significativo en los océanos</label
+                  >
+                </div>
+              </div>
+              <div class="feedback"></div>
+              <div class="navigation">
+                <button class="btn-prev" onclick="prevQuestion()">
+                  Anterior
+                </button>
+                <button class="btn-next" onclick="submitQuiz()">Enviar</button>
+              </div>
+            </div>
+
+            <div class="question" id="results">
+              <div class="results">
+                <h2>Resultados del quiz</h2>
+                <div class="score"><span id="score">0</span>/3 correctas</div>
+                <div id="scoreMessage"></div>
+              </div>
+              <div class="navigation">
+                <button class="btn-prev" onclick="reviewQuiz()">
+                  Revisar respuestas
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
     <footer-comp></footer-comp>
     <script src="../../js/quiz.js" defer></script>
@@ -241,7 +282,4 @@
     <script src="../../js/quiz.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.10.8/dist/index.umd.min.js"></script>
 </body>
-</body>
 </html>
-
-

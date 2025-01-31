@@ -14,11 +14,10 @@ class MobileNav extends HTMLElement {
                     ☰
                 </button>
                 <nav class="mobile-nav-menu">
-                    <a href="#">Menú</a>
-                    <a href="#">Objetivos</a>
-                    <a href="#">Metodología</a>
-                    <a href="#">Políticas de Evaluación</a>
-
+                  <a href="${basePath}index.html">Menú</a>
+                    <a href="${basePath}modulos/modulo_0/aprendizaje.html">Objetivos</a>
+                    <a href="${basePath}modulos/modulo_0/metodologia.html">Metodología</a>
+                    <a href="${basePath}modulos/modulo_0/evaluacion.html">Políticas de Evaluación</a>
                     <div class="nav-search">
                     <form id="search-form">
                         <div class="nav-input-container">

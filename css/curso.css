@@ -205,9 +205,9 @@ img.imgemoji{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90rem; 
+    width: 95rem; 
     height: auto; 
-    margin-left: -8rem;
+    margin-left: -9rem;
 }
 
 .content ol {

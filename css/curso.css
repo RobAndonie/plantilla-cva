@@ -123,6 +123,7 @@
     display: flex;
     width: 100%;
     margin-top: 1rem;
+    justify-content: space-around;
 }
 
 /* Contenido principal */
@@ -157,7 +158,7 @@
 
 .content p {
     font-size: 1.5rem;
-    margin: 5%;
+    margin: 5% 0;
     margin-bottom: 1rem;
     margin-top: 1.5rem;
 }
@@ -200,27 +201,32 @@ img.imgconta {
 
 }
 
+img.imgemoji {
+    float: right;
+    width: 18%;
+    margin-left: 16px;
+    margin-bottom: -3rem;
+    margin-top: -6rem;
+    margin-right: 6%;
+
+}
 
 .img_circulo {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90rem;
+    width: 95rem;
     height: auto;
-    margin-left: -8rem;
+    margin-left: -9rem;
 }
 
 .content ol {
     list-style: decimal;
-    margin-left: 5%;
-    margin-right: 5%;
     box-sizing: inherit;
     list-style-position: inside;
 }
 
 .content ul {
-    margin-left: 5%;
-    margin-right: 5%;
     box-sizing: inherit;
     list-style-position: inside;
 }

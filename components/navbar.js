@@ -47,6 +47,7 @@ class NavBar extends HTMLElement {
             { keyword: 'Lección 8: ¿Qué dicen los científicos?', link: `${basePath}modulos/modulo_1/leccion1_8.html` },
             { keyword: 'Lección 9: ¿Por qué debe importarnos?', link: `${basePath}modulos/modulo_1/leccion1_9.html` },
             { keyword: 'Lección 10: Cambio climático global pero distribuido de manera desigual', link: `${basePath}modulos/modulo_1/leccion1_10.html` },
+            { keyword: 'Video lección 10: Cambio climático global pero distribuido de manera desigual', link: `${basePath}modulos/modulo_1/leccion1_10video.html` },
             { keyword: 'Lección 11: Impulsores, cambios e impactos', link: `${basePath}modulos/modulo_1/leccion1_11.html` },
             { keyword: 'Lección 12: Impactos climáticos en los sistemas naturales', link: `${basePath}modulos/modulo_1/leccion1_12.html` },
             { keyword: 'Lección 13: Impactos climáticos en sistemas humanos', link: `${basePath}modulos/modulo_1/leccion1_13.html` },

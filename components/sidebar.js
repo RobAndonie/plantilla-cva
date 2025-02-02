@@ -32,6 +32,7 @@ class SideBar extends HTMLElement {
                             <li><a href="../modulo_1/leccion1_8.html">Lección 8: ¿Qué dicen los científicos?</a></li>
                             <li><a href="../modulo_1/leccion1_9.html">Lección 9: ¿Por qué debe importarnos?</a></li>
                             <li><a href="../modulo_1/leccion1_10.html">Lección 10: Cambio climático global pero distribuido de manera desigual</a></li>
+                            <li><a href="../modulo_1/leccion1_10video.html">Video lección 10: Cambio climático global pero distribuido de manera desigual</a></li>
                             <li><a href="../modulo_1/leccion1_11.html">Lección 11: Impulsores, cambios e impactos</a></li>
                             <li><a href="../modulo_1/leccion1_12.html">Lección 12: Impactos climáticos en los sistemas naturales</a></li>
                             <li><a href="../modulo_1/leccion1_13.html">Lección 13: Impactos climáticos en sistemas humanos</a></li>

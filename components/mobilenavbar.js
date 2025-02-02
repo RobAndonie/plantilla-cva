@@ -4,21 +4,18 @@ class MobileNav extends HTMLElement {
   }
 
   connectedCallback() {
-    const basePath = window.location.pathname.includes("modulos")
-      ? "../../"
-      : "./";
+    const basePath = window.location.pathname.includes('modulos') ? '../../' : './';
 
     this.innerHTML = `
             <header class="mobile-nav-header">
                 <div class="mobile-nav-logo-container">
-                    <img class="mobile-nav-logo" src="../../images/tec_blanco.png" width="120px">
-                    <img class="mobile-nav-logo" src="../../images/LOGOTIPO CVA BLANCO.png" width="150px">
+                    <img class="nav-logo" src="${basePath}images/tec_blanco.png" width="150px">
+                    <img class="nav-logo" src="${basePath}images/LOGOTIPO CVA BLANCO.png" width="200px">
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle navigation">
                     ☰
                 </button>
                 <nav class="mobile-nav-menu">
-
                     <a href="${basePath}index.html">Menú</a>
                     <a href="${basePath}modulos/modulo_0/aprendizaje.html">Objetivos</a>
                     <a href="${basePath}modulos/modulo_0/metodologia.html">Metodología</a>
@@ -27,7 +24,7 @@ class MobileNav extends HTMLElement {
                     <div class="nav-search">
                     <form id="search-form">
                         <div class="nav-input-container">
-                            <img src="../../images/lupa.png" class="nav-icon" alt="Lupa">
+                            <img src="${basePath}images/lupa.png" class="nav-icon" alt="Lupa">
                             <input type="text" placeholder="Buscar..." id="input-box" autocomplete="off">
                             <a id="dynamic-link" href="#" class="button">Enviar</a>
                         </div>
@@ -60,22 +57,24 @@ class MobileNav extends HTMLElement {
 
   initAutocomplete() {
     const availableKeyWords = [
-      {
-        keyword: "¿Qué es el cambio climático?",
-        link: "../../modulos/modulo_1/introduccion.html",
-      },
-      {
-        keyword: "Los impactos globales del cambio climático",
-        link: "../../modulos/modulo_1/impactglobal1-10.html",
-      },
-      {
-        keyword: "Justicia climática",
-        link: "../../modulos/modulo_1/introduccion.html",
-      },
-      {
-        keyword: "Es algo natural...¿No es así?",
-        link: "../../modulos/modulo_1/introduccion.html",
-      },
+      { keyword: 'Lección 1: Introducción al Curso', link: `${basePath}modulos/modulo_1/leccion1_1.html` },
+      { keyword: 'Colaboradores', link: `${basePath}modulos/modulo_1/leccion1_2.html` },
+      { keyword: 'Conoce al equipo', link: `${basePath}modulos/modulo_1/leccion1_3.html` },
+      { keyword: 'Lección 4: Presentaciones', link: `${basePath}modulos/modulo_1/leccion1_4.html` },
+      { keyword: 'Lección 5: Bienvenidos a la semana 1', link: `${basePath}modulos/modulo_1/leccion1_5.html` },
+      { keyword: 'Quiz: Cuestionario de inicio', link: `${basePath}modulos/modulo_1/leccion1_6.html` },
+      { keyword: 'Lección 7: ¿Qué es el cambio climático?', link: `${basePath}modulos/modulo_1/leccion1_7.html` },
+      { keyword: 'Lección 8: ¿Qué dicen los científicos?', link: `${basePath}modulos/modulo_1/leccion1_8.html` },
+      { keyword: 'Lección 9: ¿Por qué debe importarnos?', link: `${basePath}modulos/modulo_1/leccion1_9.html` },
+      { keyword: 'Lección 10: Cambio climático global pero distribuido de manera desigual', link: `${basePath}modulos/modulo_1/leccion1_10.html` },
+      { keyword: 'Lección 11: Impulsores, cambios e impactos', link: `${basePath}modulos/modulo_1/leccion1_11.html` },
+      { keyword: 'Lección 12: Impactos climáticos en los sistemas naturales', link: `${basePath}modulos/modulo_1/leccion1_12.html` },
+      { keyword: 'Lección 13: Impactos climáticos en sistemas humanos', link: `${basePath}modulos/modulo_1/leccion1_13.html` },
+      { keyword: 'Lección 14: ¿A quién afecta el cambio climático?', link: `${basePath}modulos/modulo_1/leccion1_14.html` },
+      { keyword: 'Lección 15: ¿Quién es responsable del cambio climático?', link: `${basePath}modulos/modulo_1/leccion1_15.html` },
+      { keyword: 'Lección 16: Explicación de la justicia climática', link: `${basePath}modulos/modulo_1/leccion1_16.html` },
+      { keyword: 'Lección 17: Cuatro imperativos para la acción', link: `${basePath}modulos/modulo_1/leccion1_17.html` },
+      { keyword: 'Quiz: ¿Qué has aprendido?', link: `${basePath}modulos/modulo_1/quiz.html` }
     ];
 
     const resultsBox = this.querySelector(".result-box");

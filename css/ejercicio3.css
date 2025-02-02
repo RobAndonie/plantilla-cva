@@ -168,3 +168,11 @@
         flex-direction: column;
     }
 }
+.navigation-buttons {
+    display: flex;
+    justify-content: center; /* Centra el grupo de botones */
+    gap: 750px; /* Espacio entre los botones */
+    margin-top: 0px; /* Espacio superior entre los botones y el contenido */
+    margin-bottom: 60px;
+margin-left: 110px;
+}

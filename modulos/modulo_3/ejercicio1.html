@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="../../css/navigationbuttons.css" />
     <link rel="stylesheet" href="../../css/grid.css" />
     <link rel="stylesheet" href="../../css/ejercicio1.css">
+    <link rel="stylesheet" href="../../css/popup.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="../../js/popup.js" defer></script>
     <script src="../../components/navbar.js" defer></script>
     <script src="../../components/sidebar.js" defer></script>
     <script src="../../components/footer.js" defer></script>
@@ -72,5 +74,23 @@
         </main>
     </div>
     <footer-comp></footer-comp>
+    <div class="overlay" id="popupOverlay">
+        <div class="popup">
+            <div class="curved-text-wrapper">
+                <svg viewBox="0 0 500 200" class="curved-text">
+                    <defs>
+                        <path id="curvePath" d="M50,150 Q250,20 450,150" />
+                    </defs>
+                    <text>
+                        <textPath href="#curvePath" startOffset="50%" text-anchor="middle">
+                            ¡Es hora de probar tu conocimiento!
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+            <img src="../../images/teus.png" alt="Mascota" class="heart-beat" />
+            <button id="closePopup">¡Estoy listo!</button>
+        </div>
+    </div>
 </body>
 </html>

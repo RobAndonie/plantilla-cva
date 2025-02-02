@@ -180,3 +180,12 @@ button.confettibu:hover {
     filter: brightness(85%);
 }
 
+
+.imgemoji{
+        float: right;
+        width: 20%;
+        margin-left: 20px;
+        margin-bottom: -3rem;
+        margin-top: -6rem;
+        margin-right: 3%;
+}

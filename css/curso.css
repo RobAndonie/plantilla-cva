@@ -1,10 +1,10 @@
 /* Nav bar */
 
-.header{
+.header {
     position: fixed;
-    top:0;
-    left:0;
-    width:100%;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 0.9rem;
     background: var(--light-color);
     display: flex;
@@ -15,16 +15,17 @@
 
 .logo-container {
     display: flex;
-    align-items: center; 
-    gap: 0.1rem; 
+    align-items: center;
+    gap: 0.1rem;
 }
 
 .navbar {
-    display:flex;
+    display: flex;
     justify-content: flex-start;
     margin-left: 20px;
 }
-.navbar a{
+
+.navbar a {
     position: relative;
     font-size: 15px;
     color: var(--dark-color);
@@ -33,10 +34,10 @@
     margin-left: 80px;
 }
 
-.navbar a::before{
+.navbar a::before {
     content: '';
     position: absolute;
-    top:100%;
+    top: 100%;
     left: 0;
     width: 0;
     height: 2px;
@@ -45,10 +46,10 @@
 }
 
 .navbar a:hover::before {
-    width:100%;
+    width: 100%;
 }
 
-.search{
+.search {
     position: relative;
     display: flex;
     align-items: center;
@@ -60,58 +61,59 @@
 .input-container .icon {
     position: absolute;
     margin-top: 10px;
-    left: 10px; 
-    width: 20px; 
+    left: 10px;
+    width: 20px;
     height: 20px;
-  }
+}
 
-.input-container input{
-    padding:15px 10px 15px 45px;
-    border:none;
-    outline:none;
+.input-container input {
+    padding: 15px 10px 15px 45px;
+    border: none;
+    outline: none;
     border-radius: 10px;
     font-size: 15px;
-    box-shadow: 0px 2px 5px rgba(0, 0,0,0.2);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.input-container input:hover{
-    border:1px solid var(--dark-color);
+.input-container input:hover {
+    border: 1px solid var(--dark-color);
 }
 
-.input-container .button{
+.input-container .button {
     padding: 10px;
     background-color: var(--primary-color);
-    border: none; 
+    border: none;
     border-radius: 6px;
     color: var(--dark-color);
     font-size: 12px;
-    text-decoration: none; 
-    text-align: center; 
-    display: inline-block; /*  enlace se comporta como un botón */
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    /*  enlace se comporta como un botón */
     cursor: pointer;
 }
 
-.input-container .button:hover{
-    background-color:gray;
+.input-container .button:hover {
+    background-color: gray;
 }
 
-.result-box ul{
+.result-box ul {
     border-top: 1px solid #999;
-    padding:15px 10px;
+    padding: 15px 10px;
 }
 
-.result-box ul li{
+.result-box ul li {
     list-style: none;
     border-radius: 3px;
-    padding:15px 10px;
+    padding: 15px 10px;
     cursor: pointer;
 }
 
-.result-box ul li:hover{
+.result-box ul li:hover {
     background: skyblue;
 }
 
-.result-box{
+.result-box {
     max-height: 100px;
     overflow-y: scroll;
 }
@@ -121,8 +123,8 @@
     display: flex;
     width: 100%;
     margin-top: 1rem;
+    justify-content: space-around;
 }
-
 
 /* Contenido principal */
 .content {
@@ -149,69 +151,75 @@
 
 .content p {
     font-size: 1.5rem;
-    margin: 5%;
+    margin: 5% 0;
     margin-bottom: 1rem;
     margin-top: 1.5rem;
 }
+
 .content img {
-    float: right; 
-    width: 45%; 
+    float: right;
+    width: 45%;
     margin-left: 6px;
     margin-bottom: 1rem;
     margin-top: 3rem;
     margin-right: 5%;
 }
 
-img.center-image{
-    float: right; 
-    width: 25%; 
+img.center-image {
+    float: right;
+    width: 25%;
     margin-left: 20px;
     margin-bottom: 2rem;
     margin-top: -4rem;
-    margin-right: 3%;    
+    margin-right: 3%;
 }
 
-img.dragim{
-    float: right; 
+img.dragim {
+    float: right;
     width: 100%;
     height: 80%;
     margin-bottom: 2rem;
-    margin-right: 2%;    
+    margin-right: 2%;
 }
 
-img.imgconta{
-    float: right; 
+img.imgconta {
+    float: right;
     width: 90%;
     height: 80%;
     margin-bottom: 2rem;
-    margin-right: 2%;  
+    margin-right: 2%;
     margin-left: 2%;
-    box-shadow: 0 0 14px 0 rgb(0,0,0,50%);
-    position:relative; 
+    box-shadow: 0 0 14px 0 rgb(0, 0, 0, 50%);
+    position: relative;
 
 }
 
+img.imgemoji {
+    float: right;
+    width: 18%;
+    margin-left: 16px;
+    margin-bottom: -3rem;
+    margin-top: -6rem;
+    margin-right: 6%;
+
+}
 
 .img_circulo {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90rem; 
-    height: auto; 
-    margin-left: -8rem;
+    width: 95rem;
+    height: auto;
+    margin-left: -9rem;
 }
 
 .content ol {
     list-style: decimal;
-    margin-left: 5%;
-    margin-right: 5%;
     box-sizing: inherit;
     list-style-position: inside;
 }
 
 .content ul {
-    margin-left: 5%;
-    margin-right: 5%;
     box-sizing: inherit;
     list-style-position: inside;
 }
@@ -230,7 +238,7 @@ img.imgconta{
     justify-content: center;
     align-items: flex-start;
     gap: 1rem;
-    padding: 0.1rem 1rem; 
+    padding: 0.1rem 1rem;
     margin-top: 1rem;
 }
 
@@ -241,7 +249,7 @@ img.imgconta{
     min-height: 350px;
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
-    position: relative; 
+    position: relative;
 }
 
 .img_ce {
@@ -253,7 +261,7 @@ img.imgconta{
 }
 
 .introo {
-    max-height: 100px; 
+    max-height: 100px;
     width: 320px;
     padding: 1rem;
     box-sizing: border-box;
@@ -263,7 +271,8 @@ img.imgconta{
     bottom: 0;
     left: 0;
     right: 0;
-    overflow: auto; /* Permitir scroll cuando el contenido es más grande */
+    overflow: auto;
+    /* Permitir scroll cuando el contenido es más grande */
     transition: 0.5s;
 }
 
@@ -285,39 +294,42 @@ h4 {
 }
 
 .card:hover .introo {
-    max-height: 200px; /* Incrementa la altura cuando se hace hover */
+    max-height: 200px;
+    /* Incrementa la altura cuando se hace hover */
     background: var(--dark-color);
-    overflow: auto; /* Sigue permitiendo el scroll */
+    overflow: auto;
+    /* Sigue permitiendo el scroll */
 }
 
 .card:hover .p1 {
-    visibility: visible; 
-    opacity: 1; 
+    visibility: visible;
+    opacity: 1;
 }
 
-.card:hover .img_ce{
+.card:hover .img_ce {
     transform: scale(1.1) rotate(-5deg);
 }
 
 
 .content iframe {
-    width: 90%; 
+    width: 90%;
     max-width: 100%;
-    margin: 5% auto; 
+    margin: 5% auto;
     display: block;
 }
 
 
 .content object {
-    width: 90%; 
+    width: 90%;
     max-width: 100%;
-    margin: 5% auto; 
+    margin: 5% auto;
     display: block;
 }
+
 .content audio {
-    width: 80%; 
+    width: 80%;
     max-width: 100%;
-    margin: 5% auto; 
+    margin: 5% auto;
     display: block;
 }
 
@@ -331,7 +343,8 @@ h4 {
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -344,14 +357,29 @@ h4 {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
     border: 0;
 }
 
 
 .shadow-box {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Slight shadow */
-    padding: 2rem 0.5rem; /* Optional: Add some padding for better appearance */
-    border-radius: 5px; /* Optional: Add rounded corners */
-    background-color: #f1f0f0a2; /* Optional: Add background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    /* Slight shadow */
+    padding: 2rem 0.5rem;
+    /* Optional: Add some padding for better appearance */
+    border-radius: 5px;
+    /* Optional: Add rounded corners */
+    background-color: #f1f0f0a2;
+    /* Optional: Add background color */
+}
+
+@media screen and (max-width: 1024px) {
+    .container img {
+        width: 100%;
+    }
+
+    .content {
+        width: 90%;
+        padding: 1rem;
+    }
 }

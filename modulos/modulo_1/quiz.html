@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<!DOCTYPE html>
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Soluciones climáticas</title>
     <link rel="stylesheet" href="../../css/quiz.css" />
     <link rel="stylesheet" href="../../css/styles.css" />
-    <link rel="stylesheet" href="../../css/curso.css" />
     <link rel="stylesheet" href="../../css/navbar.css" />
-    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../css/curso.css" />
     <link rel="stylesheet" href="../../css/sidebar.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../css/navigationbuttons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="../../components/navbar.js" defer></script>
     <script src="../../components/mobilenavbar.js" defer></script>
     <script src="../../components/mobil.js" defer></script>
     <script src="../../components/sidebar.js" defer></script>
@@ -57,7 +58,7 @@
                         </div>
                         <div class="navigation">
                             <div></div>
-                            <button class="btn-next" onclick="SiguienteQuestion()">Comenzar quiz</button>
+                            <button class="btn-next" onclick="nextQuestion()">Comenzar quiz</button>
                         </div>
                     </div>
 
@@ -77,10 +78,10 @@
                                 <label for="q1c">Solo afecta a las zonas que producen más emisiones</label>
                             </div>
                         </div>
-                        <div class="feedAtrás"></div>
+                        <div class="feedback"></div>
                         <div class="navigation">
                             <button class="btn-prev" onclick="prevQuestion()">Anterior</button>
-                            <button class="btn-next" onclick="SiguienteQuestion()">Siguiente</button>
+                            <button class="btn-next" onclick="nextQuestion()">Siguiente</button>
                         </div>
                     </div>
 
@@ -100,10 +101,10 @@
                                 <label for="q2c">Las mujeres, minorías étnicas y comunidades indígenas</label>
                             </div>
                         </div>
-                        <div class="feedAtrás"></div>
+                        <div class="feedback"></div>
                         <div class="navigation">
                             <button class="btn-prev" onclick="prevQuestion()">Anterior</button>
-                            <button class="btn-next" onclick="SiguienteQuestion()">Siguiente</button>
+                            <button class="btn-next" onclick="nextQuestion()">Siguiente</button>
                         </div>
                     </div>
 
@@ -123,10 +124,10 @@
                                 <label for="q3c">Pérdida de biodiversidad</label>
                             </div>
                         </div>
-                        <div class="feedAtrás"></div>
+                        <div class="feedback"></div>
                         <div class="navigation">
                             <button class="btn-prev" onclick="prevQuestion()">Anterior</button>
-                            <button class="next" onclick="SiguienteQuestion()">Siguiente</button>
+                            <button class="btn-next" onclick="nextQuestion()">Siguiente</button>
                         </div>
                     </div>
 
@@ -146,10 +147,10 @@
                                 <label for="q4c">Las inundaciones en Egipto de 2021</label>
                             </div>
                         </div>
-                        <div class="feedAtrás"></div>
+                        <div class="feedback"></div>
                         <div class="navigation">
                             <button class="btn-prev" onclick="prevQuestion()">Anterior</button>
-                            <button class="next" onclick="SiguienteQuestion()">Siguiente</button>
+                            <button class="btn-next" onclick="nextQuestion()">Siguiente</button>
                         </div>
                     </div>
 
@@ -169,10 +170,10 @@
                                 <label for="q5c">Imperativo económico</label>
                             </div>
                         </div>
-                        <div class="feedAtrás"></div>
+                        <div class="feedback"></div>
                         <div class="navigation">
                             <button class="btn-prev" onclick="prevQuestion()">Anterior</button>
-                            <button class="next" onclick="SiguienteQuestion()">Siguiente</button>
+                            <button class="btn-next" onclick="nextQuestion()">Siguiente</button>
                         </div>
                     </div>
 
@@ -192,10 +193,10 @@
                                 <label for="q6c">Los países en desarrollo fueron los primeros en generar emisiones significativas</label>
                             </div>
                         </div>
-                        <div class="feedAtrás"></div>
+                        <div class="feedback"></div>
                         <div class="navigation">
                             <button class="btn-prev" onclick="prevQuestion()">Anterior</button>
-                            <button class="next" onclick="SiguienteQuestion()">Siguiente</button>
+                            <button class="btn-next" onclick="nextQuestion()">Siguiente</button>
                         </div>
                     </div>
 
@@ -215,10 +216,10 @@
                                 <label for="q7c">Las personas que menos contribuyen al cambio climático a menudo sufren más sus impactos</label>
                             </div>
                         </div>
-                        <div class="feedAtrás"></div>
+                        <div class="feedback"></div>
                         <div class="navigation">
                             <button class="btn-prev" onclick="prevQuestion()">Anterior</button>
-                            <button class="next" onclick="submitQuiz()">Enviar</button>
+                            <button class="btn-next" onclick="submitQuiz()">Enviar</button>
                         </div>
                     </div>
 
@@ -235,50 +236,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="option">
-                  <input type="radio" name="q3" id="q3b" value="b" />
-                  <label for="q3b"
-                    >Solo cambios en la temperatura del agua</label
-                  >
-                </div>
-                <div class="option">
-                  <input type="radio" name="q3" id="q3c" value="c" />
-                  <label for="q3c"
-                    >No hay impacto significativo en los océanos</label
-                  >
-                </div>
               </div>
-              <div class="feedback"></div>
-              <div class="navigation">
-                <button class="btn-prev" onclick="prevQuestion()">
-                  Anterior
-                </button>
-                <button class="btn-next" onclick="submitQuiz()">Enviar</button>
-              </div>
-            </div>
-
-            <div class="question" id="results">
-              <div class="results">
-                <h2>Resultados del quiz</h2>
-                <div class="score"><span id="score">0</span>/3 correctas</div>
-                <div id="scoreMessage"></div>
-              </div>
-              <div class="navigation">
-                <button class="btn-prev" onclick="reviewQuiz()">
-                  Revisar respuestas
-                </button>
-              </div>
-            </div>
           </div>
         </section>
       </main>
     </div>
     <footer-comp></footer-comp>
-    <script src="../../js/quiz.js" defer></script>
-    <div class="surprise">
-        <button class="confettibu">Celebra</button>
-    </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0"></script>
     <script src="../../js/quiz.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.10.8/dist/index.umd.min.js"></script>
 </body>

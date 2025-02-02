@@ -1,59 +1,105 @@
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
 .img-container {
-    display: flex;
-    width: 45%;
-    position: sticky;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  min-width: 35%;
 }
 
 .img-container img {
-    width: 490px;
-    height: auto;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
 }
 
 .creditos-content {
-    width: 80%;
-    overflow-y: auto;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    margin-bottom: 2.5%;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  overflow-y: auto;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-bottom: 2.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .creditos-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
-    text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #0054a6;
 }
 
 .creditos-content h2 {
-    font-size: 2.25rem;
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
-    text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
 }
 
 .creditos-content h3 {
-    font-size: 1.2rem;
-    margin: 0 5%;
-    text-align: left;
+  font-size: 1.5rem;
+  margin: 0 5%;
+  text-align: left;
+  color: #0054a6;
 }
 
 .creditos-content p {
-    font-size: 1.2rem;
-    margin: 1rem 5%;
+  font-size: 1.2rem;
+  margin: 1rem 5%;
 }
 
 .creditos-content ul {
-    margin-left: 5%;
-    margin-right: 5%;
-    box-sizing: inherit;
-    list-style-position: inside;
+  margin-left: 5%;
+  margin-right: 5%;
+  box-sizing: inherit;
+  list-style-position: inside;
 }
 
 .creditos-content li {
-    display: list-item;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
+  display: list-item;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-container {
+    width: 100%;
+  }
+
+  .img-container img {
+    max-width: 100%;
+    height: 32rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .creditos-content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

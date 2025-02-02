@@ -8,7 +8,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    /* min-height: 100vh; */
+    min-height: 100vh;
+
+    margin-bottom: 12rem;
 }
 
 h1 {
@@ -60,4 +62,3 @@ audio {
     height: 54px;
     justify-content: center;
 }
-

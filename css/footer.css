@@ -56,4 +56,8 @@
         text-align: center;
         gap: 10px;
     }
+
+    .footer {
+        position: relative;
+    }
 }

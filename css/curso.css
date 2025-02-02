@@ -135,13 +135,6 @@
     margin-right: 2.5%;
 }
 
-@media screen and (max-width: 1024px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 .content h2 {
     font-size: 2.25rem;
     margin-bottom: 1.5rem;
@@ -378,4 +371,15 @@ h4 {
     /* Optional: Add rounded corners */
     background-color: #f1f0f0a2;
     /* Optional: Add background color */
+}
+
+@media screen and (max-width: 1024px) {
+    .container img {
+        width: 100%;
+    }
+
+    .content {
+        width: 90%;
+        padding: 1rem;
+    }
 }

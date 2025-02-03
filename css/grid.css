@@ -15,3 +15,15 @@ td {
     width: 75%;
     border-left: 1px solid #ccc;
 }
+
+@media screen and (max-width: 768px) {
+    tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .colaborador-description {
+        width: 100%;
+        border-left: none;
+    }
+}

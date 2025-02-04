@@ -22,6 +22,7 @@ body {
   width: 100%;
   max-width: 560px;
   height: auto;
+  border-radius: 8px; /* Add this line for rounded corners */
 }
 
 .creditos-content {
